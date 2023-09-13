@@ -1,0 +1,98 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["clientExtensions", "postgresqlExtensions"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  extensions      = [pgcrypto]
+}
+
+model balance {
+  id                String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  supplier_id       String    @db.Uuid
+  total_amount      Int?
+  paid_amount       Int?
+  due_amount        Int?
+  last_payment_date DateTime? @db.Date
+  next_payment_date DateTime? @db.Date
+  created_at        DateTime  @default(now()) @db.Timestamp(6)
+  updated_at        DateTime  @default(now()) @db.Timestamp(6)
+  supplier          supplier  @relation(fields: [supplier_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model divergence {
+  id                    String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  goods_id              String    @db.Uuid
+  expected_quantity     Int?
+  received_quantity     Int?
+  divergence_divergence Int?
+  analysis_date         DateTime? @db.Date
+  analyst_id            String    @db.Uuid
+  created_at            DateTime  @default(now()) @db.Timestamp(6)
+  updated_at            DateTime  @default(now()) @db.Timestamp(6)
+  user                  user      @relation(fields: [analyst_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  goods                 goods     @relation(fields: [goods_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model goods {
+  id            String       @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name          String       @db.VarChar(255)
+  supplier_id   String       @db.Uuid
+  quantity      Int?
+  received_date DateTime?    @db.Date
+  receiver_id   String       @db.Uuid
+  status        String?      @db.VarChar(255)
+  created_at    DateTime     @default(now()) @db.Timestamp(6)
+  updated_at    DateTime     @default(now()) @db.Timestamp(6)
+  divergence    divergence[]
+  user          user         @relation(fields: [receiver_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  supplier      supplier     @relation(fields: [supplier_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  inventory     inventory[]
+}
+
+model inventory {
+  id           String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  goods_id     String    @db.Uuid
+  quantity     Int?
+  last_updated DateTime? @db.Date
+  updated_by   String    @db.Uuid
+  status       String?   @db.VarChar(255)
+  location     String?   @db.VarChar(255)
+  created_at   DateTime  @default(now()) @db.Timestamp(6)
+  updated_at   DateTime  @default(now()) @db.Timestamp(6)
+  goods        goods     @relation(fields: [goods_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  user         user      @relation(fields: [updated_by], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model supplier {
+  id             String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  description    String?   @db.VarChar(255)
+  address        String?   @db.VarChar(255)
+  contact_number String?   @db.VarChar(255)
+  contact_person String?   @db.VarChar(255)
+  name           String    @db.VarChar(255)
+  created_at     DateTime  @default(now()) @db.Timestamp(6)
+  updated_at     DateTime  @default(now()) @db.Timestamp(6)
+  user_id        String    @db.Uuid
+  tenant_id      String    @db.VarChar(255)
+  balance        balance[]
+  goods          goods[]
+  user           user      @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model user {
+  id          String       @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  email       String       @unique @db.VarChar(255)
+  firstName   String?      @db.VarChar(255)
+  lastName    String?      @db.VarChar(255)
+  roq_user_id String       @db.VarChar(255)
+  tenant_id   String       @db.VarChar(255)
+  created_at  DateTime     @default(now()) @db.Timestamp(6)
+  updated_at  DateTime     @default(now()) @db.Timestamp(6)
+  divergence  divergence[]
+  goods       goods[]
+  inventory   inventory[]
+  supplier    supplier[]
+}

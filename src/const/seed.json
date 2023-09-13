@@ -1,0 +1,2772 @@
+[
+  {
+    "goods": [
+      {
+        "id": "f5e3917b-4d54-4c9f-a37e-f7cfd902320e",
+        "name": "Electronics",
+        "quantity": 80414,
+        "received_date": "2023-09-13T00:13:32.610Z",
+        "status": "Available",
+        "created_at": "2023-09-12T10:14:55.733Z",
+        "updated_at": "2023-09-12T15:12:45.095Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "27c9932f-e4bb-44cd-8f41-5c09b040784a",
+        "name": "Organic Food",
+        "quantity": 97258,
+        "received_date": "2023-09-12T11:41:33.281Z",
+        "status": "Out of Stock",
+        "created_at": "2023-09-12T23:11:44.807Z",
+        "updated_at": "2023-09-12T10:32:30.223Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "28dca830-60c1-4dc0-992b-2702da44f452",
+        "name": "Handmade Crafts",
+        "quantity": 4709,
+        "received_date": "2023-09-12T02:17:52.009Z",
+        "status": "Limited Stock",
+        "created_at": "2023-09-12T22:52:38.760Z",
+        "updated_at": "2023-09-12T13:07:42.971Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "06012383-fce2-4900-b1e1-59172f705e0a",
+        "name": "Clothing",
+        "quantity": 75391,
+        "received_date": "2023-09-12T00:53:59.293Z",
+        "status": "Pre-order",
+        "created_at": "2023-09-12T23:16:22.040Z",
+        "updated_at": "2023-09-12T23:31:29.082Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "1b92b082-65a1-4098-b71e-2727e22ec1de",
+        "name": "Home Appliances",
+        "quantity": 27022,
+        "received_date": "2023-09-12T22:33:31.668Z",
+        "status": "On Sale",
+        "created_at": "2023-09-12T03:14:09.716Z",
+        "updated_at": "2023-09-12T12:45:30.233Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "17f986c8-cbf0-4079-bfb2-e02c8dcba2cd",
+        "quantity": 64156,
+        "last_updated": "2023-09-12T07:45:34.329Z",
+        "updated_by": "user_entity_pk",
+        "status": "In Stock",
+        "location": "Warehouse A",
+        "created_at": "2023-09-12T09:01:29.686Z",
+        "updated_at": "2023-09-12T23:44:37.580Z",
+        "goods_id": "1b92b082-65a1-4098-b71e-2727e22ec1de"
+      },
+      {
+        "id": "c87be0a2-12c6-4618-a70d-91a84e7d23e7",
+        "quantity": 80550,
+        "last_updated": "2023-09-12T20:49:38.507Z",
+        "updated_by": "user_entity_pk",
+        "status": "Out of Stock",
+        "location": "Warehouse B",
+        "created_at": "2023-09-12T12:58:47.310Z",
+        "updated_at": "2023-09-12T05:12:17.869Z",
+        "goods_id": "1b92b082-65a1-4098-b71e-2727e22ec1de"
+      },
+      {
+        "id": "5ffe4a17-b854-43d2-888d-bac17b668800",
+        "quantity": 96003,
+        "last_updated": "2023-09-12T06:21:52.712Z",
+        "updated_by": "user_entity_pk",
+        "status": "Low Stock",
+        "location": "Warehouse C",
+        "created_at": "2023-09-12T06:36:34.827Z",
+        "updated_at": "2023-09-12T16:57:36.734Z",
+        "goods_id": "27c9932f-e4bb-44cd-8f41-5c09b040784a"
+      },
+      {
+        "id": "9babd3c4-2a58-4366-95e1-523f708da401",
+        "quantity": 56222,
+        "last_updated": "2023-09-12T18:19:20.302Z",
+        "updated_by": "user_entity_pk",
+        "status": "On Hold",
+        "location": "Warehouse D",
+        "created_at": "2023-09-13T00:21:13.041Z",
+        "updated_at": "2023-09-12T11:00:38.362Z",
+        "goods_id": "06012383-fce2-4900-b1e1-59172f705e0a"
+      },
+      {
+        "id": "f719fd58-0c2a-4f27-a7c7-72209ffea17a",
+        "quantity": 24518,
+        "last_updated": "2023-09-12T02:56:39.262Z",
+        "updated_by": "user_entity_pk",
+        "status": "Sold",
+        "location": "Warehouse E",
+        "created_at": "2023-09-12T16:58:54.193Z",
+        "updated_at": "2023-09-12T20:05:22.980Z",
+        "goods_id": "06012383-fce2-4900-b1e1-59172f705e0a"
+      }
+    ],
+    "divergence": [
+      {
+        "id": "918232be-8573-4a24-83bd-dcd9a0d7b801",
+        "expected_quantity": 59675,
+        "received_quantity": 42704,
+        "divergence_divergence": 97395,
+        "analysis_date": "2023-09-12T19:38:33.617Z",
+        "created_at": "2023-09-12T09:38:56.372Z",
+        "updated_at": "2023-09-12T04:10:18.864Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "06012383-fce2-4900-b1e1-59172f705e0a"
+      },
+      {
+        "id": "92438ee4-bb48-4b60-9959-259a55867591",
+        "expected_quantity": 31477,
+        "received_quantity": 6789,
+        "divergence_divergence": 42201,
+        "analysis_date": "2023-09-12T07:19:20.534Z",
+        "created_at": "2023-09-12T22:53:23.998Z",
+        "updated_at": "2023-09-12T04:38:28.614Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "1b92b082-65a1-4098-b71e-2727e22ec1de"
+      },
+      {
+        "id": "77364834-805d-4f03-b60c-f1077e517790",
+        "expected_quantity": 34531,
+        "received_quantity": 71402,
+        "divergence_divergence": 9839,
+        "analysis_date": "2023-09-12T05:48:38.628Z",
+        "created_at": "2023-09-12T07:16:48.517Z",
+        "updated_at": "2023-09-12T09:43:26.535Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "06012383-fce2-4900-b1e1-59172f705e0a"
+      },
+      {
+        "id": "8c4db396-1407-4190-b534-c246d13dcae5",
+        "expected_quantity": 30131,
+        "received_quantity": 4814,
+        "divergence_divergence": 87161,
+        "analysis_date": "2023-09-12T09:58:03.295Z",
+        "created_at": "2023-09-12T02:11:52.737Z",
+        "updated_at": "2023-09-12T07:59:58.091Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "28dca830-60c1-4dc0-992b-2702da44f452"
+      },
+      {
+        "id": "c4e0a68f-085c-49f5-a92b-4fb71163072b",
+        "expected_quantity": 66914,
+        "received_quantity": 94511,
+        "divergence_divergence": 22884,
+        "analysis_date": "2023-09-12T19:56:07.963Z",
+        "created_at": "2023-09-12T22:08:57.539Z",
+        "updated_at": "2023-09-12T12:56:02.014Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "1b92b082-65a1-4098-b71e-2727e22ec1de"
+      }
+    ],
+    "balance": [
+      {
+        "id": "64c326ee-9a30-47b2-92f0-ddfbaa6333e8",
+        "total_amount": 63487,
+        "paid_amount": 5050,
+        "due_amount": 19207,
+        "last_payment_date": "2023-09-12T16:45:13.127Z",
+        "next_payment_date": "2023-09-12T06:41:46.330Z",
+        "created_at": "2023-09-12T12:54:51.604Z",
+        "updated_at": "2023-09-12T05:46:31.122Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "88806a23-1778-48bc-89e9-a2b335636ad0",
+        "total_amount": 66351,
+        "paid_amount": 24534,
+        "due_amount": 35039,
+        "last_payment_date": "2023-09-12T13:08:50.050Z",
+        "next_payment_date": "2023-09-12T04:31:36.619Z",
+        "created_at": "2023-09-12T16:38:37.256Z",
+        "updated_at": "2023-09-12T07:39:18.532Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "2141e0ae-6e06-41cb-964d-abb12d7d4ec6",
+        "total_amount": 86333,
+        "paid_amount": 27970,
+        "due_amount": 50857,
+        "last_payment_date": "2023-09-12T20:59:03.556Z",
+        "next_payment_date": "2023-09-12T13:20:52.904Z",
+        "created_at": "2023-09-12T04:44:28.051Z",
+        "updated_at": "2023-09-12T07:48:26.851Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "cdfec30b-4626-4ea6-8b52-364246758f44",
+        "total_amount": 97749,
+        "paid_amount": 19505,
+        "due_amount": 63052,
+        "last_payment_date": "2023-09-12T13:10:13.839Z",
+        "next_payment_date": "2023-09-12T02:02:47.239Z",
+        "created_at": "2023-09-12T12:22:02.296Z",
+        "updated_at": "2023-09-12T06:33:44.674Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "3ee9ed7b-0a5b-4e30-9719-a8367bb6eba4",
+        "total_amount": 22034,
+        "paid_amount": 85759,
+        "due_amount": 20711,
+        "last_payment_date": "2023-09-12T03:25:52.243Z",
+        "next_payment_date": "2023-09-12T01:15:09.890Z",
+        "created_at": "2023-09-12T17:15:46.334Z",
+        "updated_at": "2023-09-12T06:28:15.816Z",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "df189c82-5df8-4269-96c4-e72031444fcd",
+        "email": "Martin_Schaefer39@gmail.com",
+        "firstName": "Nelda",
+        "lastName": "Feil",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/16587874",
+        "tenantId": null
+      },
+      {
+        "reference": "98accf5d-b81f-4efa-9a1f-3a9f798d6557",
+        "email": "Cassie84@yahoo.com",
+        "firstName": "Felicia",
+        "lastName": "Smith",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/3083862",
+        "tenantId": null
+      },
+      {
+        "reference": "ba353fc2-716c-4315-bcc8-2ba5d3729ccf",
+        "email": "Vito_Paucek22@hotmail.com",
+        "firstName": "Nakia",
+        "lastName": "Stehr",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/38224716",
+        "tenantId": null
+      },
+      {
+        "reference": "9155011b-206d-41b7-96ca-a7caa3954315",
+        "email": "Athena72@yahoo.com",
+        "firstName": "Berenice",
+        "lastName": "Zieme",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/50675840",
+        "tenantId": null
+      },
+      {
+        "reference": "b46da782-fb08-45e4-8e91-2ed73d9ad302",
+        "email": "Sandy.Schumm41@gmail.com",
+        "firstName": "Joe",
+        "lastName": "Hintz",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/368.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "goods": [
+      {
+        "id": "74b607fd-271d-4f17-9e30-352fcf72abd6",
+        "name": "Product A",
+        "quantity": 79495,
+        "received_date": "2023-09-12T04:37:20.335Z",
+        "status": "In Stock",
+        "created_at": "2023-09-12T20:24:08.626Z",
+        "updated_at": "2023-09-12T17:56:55.583Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "7b44cea5-3bcc-4e02-8c38-3b195c321131",
+        "name": "Product B",
+        "quantity": 66632,
+        "received_date": "2023-09-12T04:49:38.283Z",
+        "status": "Out of Stock",
+        "created_at": "2023-09-12T16:45:42.167Z",
+        "updated_at": "2023-09-13T00:16:04.870Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "34858a92-3f3d-414a-91af-0698ac988997",
+        "name": "Product C",
+        "quantity": 7861,
+        "received_date": "2023-09-12T23:41:54.157Z",
+        "status": "Limited Availability",
+        "created_at": "2023-09-12T02:12:07.050Z",
+        "updated_at": "2023-09-12T03:36:40.303Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "7719baf0-152e-4412-9ac2-f751794af93d",
+        "name": "Product D",
+        "quantity": 28944,
+        "received_date": "2023-09-12T04:08:56.196Z",
+        "status": "Pre-order",
+        "created_at": "2023-09-12T06:01:51.310Z",
+        "updated_at": "2023-09-12T15:41:15.291Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "eb0663d8-7409-465c-9106-b4843e0cdbc4",
+        "name": "Product E",
+        "quantity": 94609,
+        "received_date": "2023-09-12T10:38:54.206Z",
+        "status": "Discontinued",
+        "created_at": "2023-09-12T23:00:22.535Z",
+        "updated_at": "2023-09-12T17:39:20.350Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "6cbdcfcd-20df-4f62-afc0-29080679ade7",
+        "quantity": 83008,
+        "last_updated": "2023-09-12T18:54:17.640Z",
+        "updated_by": "user_entity_pk",
+        "status": "Available",
+        "location": "Warehouse A",
+        "created_at": "2023-09-12T08:02:54.636Z",
+        "updated_at": "2023-09-12T08:31:04.439Z",
+        "goods_id": "34858a92-3f3d-414a-91af-0698ac988997"
+      },
+      {
+        "id": "a74189d2-0957-459c-8e6a-4f425ee8dfe6",
+        "quantity": 77997,
+        "last_updated": "2023-09-12T07:28:55.599Z",
+        "updated_by": "user_entity_pk",
+        "status": "Unavailable",
+        "location": "Warehouse B",
+        "created_at": "2023-09-12T12:07:42.347Z",
+        "updated_at": "2023-09-12T17:30:37.119Z",
+        "goods_id": "74b607fd-271d-4f17-9e30-352fcf72abd6"
+      },
+      {
+        "id": "cee8f0aa-f445-45a0-afe7-f002fff36a3b",
+        "quantity": 48005,
+        "last_updated": "2023-09-12T19:24:56.306Z",
+        "updated_by": "user_entity_pk",
+        "status": "Reserved",
+        "location": "Warehouse C",
+        "created_at": "2023-09-12T19:19:45.140Z",
+        "updated_at": "2023-09-12T15:12:39.549Z",
+        "goods_id": "7719baf0-152e-4412-9ac2-f751794af93d"
+      },
+      {
+        "id": "1f262e3a-baf9-4513-8290-926072eec568",
+        "quantity": 25991,
+        "last_updated": "2023-09-12T14:38:07.836Z",
+        "updated_by": "user_entity_pk",
+        "status": "Damaged",
+        "location": "Warehouse D",
+        "created_at": "2023-09-12T13:29:57.838Z",
+        "updated_at": "2023-09-12T04:09:37.084Z",
+        "goods_id": "7b44cea5-3bcc-4e02-8c38-3b195c321131"
+      },
+      {
+        "id": "56b6e043-50c7-4f8e-b4ff-bd8b0f6d71ca",
+        "quantity": 9978,
+        "last_updated": "2023-09-12T02:48:00.054Z",
+        "updated_by": "user_entity_pk",
+        "status": "Lost",
+        "location": "Warehouse E",
+        "created_at": "2023-09-12T07:09:56.542Z",
+        "updated_at": "2023-09-12T01:56:48.556Z",
+        "goods_id": "7b44cea5-3bcc-4e02-8c38-3b195c321131"
+      }
+    ],
+    "divergence": [
+      {
+        "id": "caa56094-bc26-41be-a152-dfd24d56f36d",
+        "expected_quantity": 12172,
+        "received_quantity": 90517,
+        "divergence_divergence": 72391,
+        "analysis_date": "2023-09-12T17:51:53.582Z",
+        "created_at": "2023-09-12T11:30:45.441Z",
+        "updated_at": "2023-09-12T02:58:42.488Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "7b44cea5-3bcc-4e02-8c38-3b195c321131"
+      },
+      {
+        "id": "bac6d238-dd01-4c86-bcc3-04dae273ba30",
+        "expected_quantity": 11537,
+        "received_quantity": 18782,
+        "divergence_divergence": 42524,
+        "analysis_date": "2023-09-12T11:15:01.823Z",
+        "created_at": "2023-09-12T18:07:58.064Z",
+        "updated_at": "2023-09-12T18:38:23.493Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "7719baf0-152e-4412-9ac2-f751794af93d"
+      },
+      {
+        "id": "67cba4eb-7169-4048-9888-f90ea225f09f",
+        "expected_quantity": 27040,
+        "received_quantity": 39507,
+        "divergence_divergence": 73022,
+        "analysis_date": "2023-09-12T07:55:08.741Z",
+        "created_at": "2023-09-12T01:29:50.849Z",
+        "updated_at": "2023-09-12T06:57:17.561Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "34858a92-3f3d-414a-91af-0698ac988997"
+      },
+      {
+        "id": "cefa640e-a3a5-4043-8dcf-6d794a7d5422",
+        "expected_quantity": 41915,
+        "received_quantity": 71144,
+        "divergence_divergence": 37855,
+        "analysis_date": "2023-09-12T04:29:59.180Z",
+        "created_at": "2023-09-12T11:14:51.015Z",
+        "updated_at": "2023-09-12T13:32:42.441Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "7719baf0-152e-4412-9ac2-f751794af93d"
+      },
+      {
+        "id": "828df93e-9482-46ee-9c69-2b994421530d",
+        "expected_quantity": 56907,
+        "received_quantity": 9551,
+        "divergence_divergence": 32995,
+        "analysis_date": "2023-09-12T16:08:40.342Z",
+        "created_at": "2023-09-12T04:14:38.798Z",
+        "updated_at": "2023-09-12T11:52:46.416Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "74b607fd-271d-4f17-9e30-352fcf72abd6"
+      }
+    ],
+    "balance": [
+      {
+        "id": "f42873ea-767a-404d-a8cd-a0f65279143e",
+        "total_amount": 22493,
+        "paid_amount": 1662,
+        "due_amount": 23569,
+        "last_payment_date": "2023-09-12T06:34:55.084Z",
+        "next_payment_date": "2023-09-12T19:38:19.914Z",
+        "created_at": "2023-09-13T00:01:41.886Z",
+        "updated_at": "2023-09-12T15:39:50.415Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "1c1b6dd0-1cde-4335-af73-67dbdeb3b8e6",
+        "total_amount": 79076,
+        "paid_amount": 62901,
+        "due_amount": 50125,
+        "last_payment_date": "2023-09-12T19:19:10.406Z",
+        "next_payment_date": "2023-09-12T19:02:33.933Z",
+        "created_at": "2023-09-12T14:59:32.005Z",
+        "updated_at": "2023-09-12T02:45:09.814Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "cac5f73d-a36f-479a-987d-81fa52018bec",
+        "total_amount": 10064,
+        "paid_amount": 68070,
+        "due_amount": 53489,
+        "last_payment_date": "2023-09-12T04:55:07.150Z",
+        "next_payment_date": "2023-09-12T10:43:59.890Z",
+        "created_at": "2023-09-12T04:37:50.867Z",
+        "updated_at": "2023-09-12T22:39:21.450Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "d820eca9-9072-4431-a1f4-d5788427f66d",
+        "total_amount": 28938,
+        "paid_amount": 35348,
+        "due_amount": 95070,
+        "last_payment_date": "2023-09-12T16:02:21.865Z",
+        "next_payment_date": "2023-09-12T12:23:18.325Z",
+        "created_at": "2023-09-12T10:22:15.145Z",
+        "updated_at": "2023-09-12T06:03:52.951Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "02180480-3237-46c6-b554-2877c0dd8739",
+        "total_amount": 21537,
+        "paid_amount": 32773,
+        "due_amount": 16945,
+        "last_payment_date": "2023-09-12T13:24:50.080Z",
+        "next_payment_date": "2023-09-12T21:54:02.100Z",
+        "created_at": "2023-09-12T22:33:15.834Z",
+        "updated_at": "2023-09-12T13:42:39.766Z",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "fa4c0d64-a4fa-43da-89ca-3a8007387849",
+        "email": "Darius_Okuneva@gmail.com",
+        "firstName": "Fermin",
+        "lastName": "Cummerata",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/256.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "01274b8e-32b3-4e12-ba37-e4276414cd54",
+        "email": "Elnora46@hotmail.com",
+        "firstName": "Porter",
+        "lastName": "Murray",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/127.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "6700a01a-9a1d-4998-b135-203340694a10",
+        "email": "Celia_Thompson@yahoo.com",
+        "firstName": "Davon",
+        "lastName": "Sporer",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/865.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "76ae5e4b-c6cc-4cb5-a71c-5d8f22175bc9",
+        "email": "Genesis78@gmail.com",
+        "firstName": "Talia",
+        "lastName": "Kohler",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/813.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "d4a10d29-4630-4113-b7a4-37caff17c1cd",
+        "email": "Britney_Hane43@gmail.com",
+        "firstName": "Jensen",
+        "lastName": "Heaney",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/20133667",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "goods": [
+      {
+        "id": "1e8d8f5b-6925-49ac-a8e4-173b8417e187",
+        "name": "Product A",
+        "quantity": 30284,
+        "received_date": "2023-09-12T05:59:57.221Z",
+        "status": "Available",
+        "created_at": "2023-09-12T05:23:12.137Z",
+        "updated_at": "2023-09-12T05:13:51.272Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "2822a953-25f7-4751-b3ed-97d28b85655a",
+        "name": "Product B",
+        "quantity": 52482,
+        "received_date": "2023-09-12T21:04:10.989Z",
+        "status": "Out of stock",
+        "created_at": "2023-09-13T00:13:22.143Z",
+        "updated_at": "2023-09-12T16:53:26.976Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "eec1e26f-3522-4a18-8604-223e92d4e351",
+        "name": "Product C",
+        "quantity": 18531,
+        "received_date": "2023-09-12T03:47:37.258Z",
+        "status": "Limited stock",
+        "created_at": "2023-09-12T03:40:22.091Z",
+        "updated_at": "2023-09-13T00:09:01.224Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "419d08ca-5205-4c64-a77e-e7557b4e7f87",
+        "name": "Product D",
+        "quantity": 6306,
+        "received_date": "2023-09-12T13:54:02.961Z",
+        "status": "Pre-order",
+        "created_at": "2023-09-12T22:39:49.784Z",
+        "updated_at": "2023-09-12T22:54:21.016Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "5ec9dce3-cb05-40d0-8462-32bef2fcf1ed",
+        "name": "Product E",
+        "quantity": 60694,
+        "received_date": "2023-09-12T04:12:04.566Z",
+        "status": "Discontinued",
+        "created_at": "2023-09-12T14:35:07.338Z",
+        "updated_at": "2023-09-12T01:47:16.591Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "1b31b12b-df1f-4208-b511-fef95b41745f",
+        "quantity": 18928,
+        "last_updated": "2023-09-12T13:03:28.952Z",
+        "updated_by": "user_entity_pk",
+        "status": "In stock",
+        "location": "Warehouse A",
+        "created_at": "2023-09-12T13:22:33.539Z",
+        "updated_at": "2023-09-12T21:11:21.397Z",
+        "goods_id": "5ec9dce3-cb05-40d0-8462-32bef2fcf1ed"
+      },
+      {
+        "id": "3b765534-c037-4d25-bc64-6e20c42c81cf",
+        "quantity": 66832,
+        "last_updated": "2023-09-12T09:18:38.411Z",
+        "updated_by": "user_entity_pk",
+        "status": "Out of stock",
+        "location": "Warehouse B",
+        "created_at": "2023-09-12T11:34:49.521Z",
+        "updated_at": "2023-09-12T11:39:04.597Z",
+        "goods_id": "5ec9dce3-cb05-40d0-8462-32bef2fcf1ed"
+      },
+      {
+        "id": "248e6642-f6f5-428e-8db5-2401f47eb7c9",
+        "quantity": 63131,
+        "last_updated": "2023-09-12T13:26:05.443Z",
+        "updated_by": "user_entity_pk",
+        "status": "Low stock",
+        "location": "Warehouse C",
+        "created_at": "2023-09-12T08:20:46.540Z",
+        "updated_at": "2023-09-12T23:42:23.134Z",
+        "goods_id": "5ec9dce3-cb05-40d0-8462-32bef2fcf1ed"
+      },
+      {
+        "id": "581b53c0-e401-4c63-bf55-21479573cb20",
+        "quantity": 97633,
+        "last_updated": "2023-09-12T09:47:51.122Z",
+        "updated_by": "user_entity_pk",
+        "status": "Backordered",
+        "location": "Warehouse D",
+        "created_at": "2023-09-12T21:46:37.775Z",
+        "updated_at": "2023-09-12T06:26:15.913Z",
+        "goods_id": "419d08ca-5205-4c64-a77e-e7557b4e7f87"
+      },
+      {
+        "id": "15979e5f-f49c-445c-af3e-151270548b68",
+        "quantity": 90931,
+        "last_updated": "2023-09-12T02:36:36.560Z",
+        "updated_by": "user_entity_pk",
+        "status": "Discontinued",
+        "location": "Warehouse E",
+        "created_at": "2023-09-12T20:10:14.616Z",
+        "updated_at": "2023-09-12T10:34:56.663Z",
+        "goods_id": "419d08ca-5205-4c64-a77e-e7557b4e7f87"
+      }
+    ],
+    "divergence": [
+      {
+        "id": "e8400478-d507-43b5-b0df-895a5481ef6c",
+        "expected_quantity": 9243,
+        "received_quantity": 61038,
+        "divergence_divergence": 87293,
+        "analysis_date": "2023-09-12T17:25:41.949Z",
+        "created_at": "2023-09-12T13:33:17.418Z",
+        "updated_at": "2023-09-12T22:23:54.094Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "1e8d8f5b-6925-49ac-a8e4-173b8417e187"
+      },
+      {
+        "id": "ff73a6cc-2dc7-4615-80ea-667c1c216832",
+        "expected_quantity": 73568,
+        "received_quantity": 54828,
+        "divergence_divergence": 95492,
+        "analysis_date": "2023-09-12T01:45:48.219Z",
+        "created_at": "2023-09-12T08:07:43.974Z",
+        "updated_at": "2023-09-12T04:00:26.775Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "2822a953-25f7-4751-b3ed-97d28b85655a"
+      },
+      {
+        "id": "af7d3780-9786-4e1f-b9ff-e53ef67a573c",
+        "expected_quantity": 79395,
+        "received_quantity": 60254,
+        "divergence_divergence": 34974,
+        "analysis_date": "2023-09-12T01:05:30.974Z",
+        "created_at": "2023-09-13T00:34:28.704Z",
+        "updated_at": "2023-09-12T06:46:07.604Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "1e8d8f5b-6925-49ac-a8e4-173b8417e187"
+      },
+      {
+        "id": "26f8b750-d091-4583-807f-342e92fd1196",
+        "expected_quantity": 75518,
+        "received_quantity": 76453,
+        "divergence_divergence": 64004,
+        "analysis_date": "2023-09-12T05:49:05.216Z",
+        "created_at": "2023-09-12T01:12:10.411Z",
+        "updated_at": "2023-09-12T01:56:42.667Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "eec1e26f-3522-4a18-8604-223e92d4e351"
+      },
+      {
+        "id": "53c8e3fa-12b9-4f15-ae39-e3b805b5cda2",
+        "expected_quantity": 4421,
+        "received_quantity": 68022,
+        "divergence_divergence": 76099,
+        "analysis_date": "2023-09-12T06:23:12.282Z",
+        "created_at": "2023-09-12T03:45:41.067Z",
+        "updated_at": "2023-09-13T00:42:49.773Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "1e8d8f5b-6925-49ac-a8e4-173b8417e187"
+      }
+    ],
+    "balance": [
+      {
+        "id": "8490fbbc-b813-437c-a509-a7d2b59a21b0",
+        "total_amount": 84762,
+        "paid_amount": 34661,
+        "due_amount": 76162,
+        "last_payment_date": "2023-09-12T11:43:36.004Z",
+        "next_payment_date": "2023-09-12T20:28:42.740Z",
+        "created_at": "2023-09-12T11:32:17.211Z",
+        "updated_at": "2023-09-13T00:12:15.480Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "9e8a0bfc-87c5-41ea-afd9-77c1c910a553",
+        "total_amount": 36008,
+        "paid_amount": 55374,
+        "due_amount": 45413,
+        "last_payment_date": "2023-09-12T18:11:53.686Z",
+        "next_payment_date": "2023-09-12T11:44:28.255Z",
+        "created_at": "2023-09-12T18:37:47.899Z",
+        "updated_at": "2023-09-12T19:11:33.826Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "fceb8b23-7d76-444e-a1b6-2a9647671a84",
+        "total_amount": 23441,
+        "paid_amount": 23748,
+        "due_amount": 39076,
+        "last_payment_date": "2023-09-12T23:51:11.284Z",
+        "next_payment_date": "2023-09-12T10:40:11.370Z",
+        "created_at": "2023-09-12T03:18:14.882Z",
+        "updated_at": "2023-09-12T08:11:42.477Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "72b32614-7b62-42f7-9e92-b7ed374d85f0",
+        "total_amount": 32159,
+        "paid_amount": 41969,
+        "due_amount": 96276,
+        "last_payment_date": "2023-09-12T05:07:26.435Z",
+        "next_payment_date": "2023-09-12T18:02:28.829Z",
+        "created_at": "2023-09-12T05:12:47.014Z",
+        "updated_at": "2023-09-12T01:53:55.460Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "f289d396-939d-4164-b784-3c52c09bd03e",
+        "total_amount": 34344,
+        "paid_amount": 19594,
+        "due_amount": 67030,
+        "last_payment_date": "2023-09-12T18:14:12.242Z",
+        "next_payment_date": "2023-09-12T19:05:28.334Z",
+        "created_at": "2023-09-12T19:31:42.699Z",
+        "updated_at": "2023-09-12T02:16:13.392Z",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "62489095-4d41-40eb-b104-abe1fac596d3",
+        "email": "Lon.Trantow@hotmail.com",
+        "firstName": "Carli",
+        "lastName": "Ondricka",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/58982375",
+        "tenantId": null
+      },
+      {
+        "reference": "e2c9ee41-bc5e-4afb-8bae-1fb80011d4ee",
+        "email": "Wyatt46@hotmail.com",
+        "firstName": "Benjamin",
+        "lastName": "Fisher",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1119.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "c84cc831-d352-48cb-8343-58eb548ed35f",
+        "email": "Edwina72@yahoo.com",
+        "firstName": "Miller",
+        "lastName": "Romaguera",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/298.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "68556f7f-306f-488f-8fc7-46d7f0b260f4",
+        "email": "Marcelo_Bartoletti0@gmail.com",
+        "firstName": "Ines",
+        "lastName": "Johnston",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67974691",
+        "tenantId": null
+      },
+      {
+        "reference": "1f6c4e67-bc35-4d98-a45a-9b6f85e6c51f",
+        "email": "Jermaine_Gorczany@hotmail.com",
+        "firstName": "Doyle",
+        "lastName": "Harvey",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/713.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "goods": [
+      {
+        "id": "0836f2a2-b173-4328-b1b1-bfd4a6048c6c",
+        "name": "Good 1",
+        "quantity": 53469,
+        "received_date": "2023-09-12T19:04:08.683Z",
+        "status": "Status 1",
+        "created_at": "2023-09-12T06:21:27.355Z",
+        "updated_at": "2023-09-12T02:05:07.813Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "8d46dfd4-7bc6-4adc-a14c-216da81f6d3c",
+        "name": "Good 2",
+        "quantity": 94505,
+        "received_date": "2023-09-12T11:54:44.892Z",
+        "status": "Status 2",
+        "created_at": "2023-09-12T20:06:51.651Z",
+        "updated_at": "2023-09-12T17:52:27.111Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "7f6e9364-432e-4a27-85ee-0f3be76197b8",
+        "name": "Good 3",
+        "quantity": 48813,
+        "received_date": "2023-09-12T11:04:20.170Z",
+        "status": "Status 3",
+        "created_at": "2023-09-12T07:19:18.467Z",
+        "updated_at": "2023-09-12T08:47:11.384Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "6198e647-ae2b-4afc-8ae9-e82758d50a7c",
+        "name": "Good 4",
+        "quantity": 84571,
+        "received_date": "2023-09-12T16:09:48.130Z",
+        "status": "Status 4",
+        "created_at": "2023-09-12T07:55:01.819Z",
+        "updated_at": "2023-09-12T14:08:48.816Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "cbbe6643-83ea-4bbe-b492-c85cc7ddb99a",
+        "name": "Good 5",
+        "quantity": 25178,
+        "received_date": "2023-09-12T13:04:14.804Z",
+        "status": "Status 5",
+        "created_at": "2023-09-12T09:46:47.186Z",
+        "updated_at": "2023-09-12T03:34:38.396Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "16f73c03-4648-4b09-80a3-9dbc7989dcd5",
+        "quantity": 22397,
+        "last_updated": "2023-09-12T13:58:31.161Z",
+        "updated_by": "user_entity_pk",
+        "status": "Status 1",
+        "location": "Location 1",
+        "created_at": "2023-09-12T20:46:28.213Z",
+        "updated_at": "2023-09-12T04:14:35.547Z",
+        "goods_id": "8d46dfd4-7bc6-4adc-a14c-216da81f6d3c"
+      },
+      {
+        "id": "3a429203-b8fc-478f-b6fc-3f908508528a",
+        "quantity": 54705,
+        "last_updated": "2023-09-12T08:02:15.272Z",
+        "updated_by": "user_entity_pk",
+        "status": "Status 2",
+        "location": "Location 2",
+        "created_at": "2023-09-12T23:16:01.964Z",
+        "updated_at": "2023-09-12T05:39:32.160Z",
+        "goods_id": "0836f2a2-b173-4328-b1b1-bfd4a6048c6c"
+      },
+      {
+        "id": "d1c6bebe-988b-4f69-a1e9-62ede7f0562d",
+        "quantity": 99194,
+        "last_updated": "2023-09-12T17:52:59.702Z",
+        "updated_by": "user_entity_pk",
+        "status": "Status 3",
+        "location": "Location 3",
+        "created_at": "2023-09-12T17:55:25.529Z",
+        "updated_at": "2023-09-12T03:47:31.677Z",
+        "goods_id": "7f6e9364-432e-4a27-85ee-0f3be76197b8"
+      },
+      {
+        "id": "1b2dd70d-26ba-4aaa-a426-eca29f08f4a3",
+        "quantity": 46221,
+        "last_updated": "2023-09-12T17:47:34.777Z",
+        "updated_by": "user_entity_pk",
+        "status": "Status 4",
+        "location": "Location 4",
+        "created_at": "2023-09-13T00:02:30.505Z",
+        "updated_at": "2023-09-12T19:54:25.790Z",
+        "goods_id": "0836f2a2-b173-4328-b1b1-bfd4a6048c6c"
+      },
+      {
+        "id": "e4ce6ab9-ab25-41bb-83e4-70ba17728053",
+        "quantity": 32665,
+        "last_updated": "2023-09-12T16:34:15.604Z",
+        "updated_by": "user_entity_pk",
+        "status": "Status 5",
+        "location": "Location 5",
+        "created_at": "2023-09-12T15:46:08.828Z",
+        "updated_at": "2023-09-12T14:41:13.794Z",
+        "goods_id": "cbbe6643-83ea-4bbe-b492-c85cc7ddb99a"
+      }
+    ],
+    "divergence": [
+      {
+        "id": "eb726f99-1ee8-4752-994a-dbb9f5538a17",
+        "expected_quantity": 59775,
+        "received_quantity": 12553,
+        "divergence_divergence": 80686,
+        "analysis_date": "2023-09-12T23:30:47.729Z",
+        "created_at": "2023-09-12T02:39:50.814Z",
+        "updated_at": "2023-09-12T09:18:21.379Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "8d46dfd4-7bc6-4adc-a14c-216da81f6d3c"
+      },
+      {
+        "id": "400718b1-e054-4c51-9e69-5e715bb18453",
+        "expected_quantity": 91381,
+        "received_quantity": 53834,
+        "divergence_divergence": 65001,
+        "analysis_date": "2023-09-12T07:42:45.565Z",
+        "created_at": "2023-09-12T08:39:43.768Z",
+        "updated_at": "2023-09-12T01:44:12.506Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "8d46dfd4-7bc6-4adc-a14c-216da81f6d3c"
+      },
+      {
+        "id": "4a76b4e9-bb71-4af1-a080-9fa7f61687cf",
+        "expected_quantity": 63387,
+        "received_quantity": 11744,
+        "divergence_divergence": 71340,
+        "analysis_date": "2023-09-12T08:49:54.265Z",
+        "created_at": "2023-09-12T03:45:47.453Z",
+        "updated_at": "2023-09-12T00:54:22.302Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "6198e647-ae2b-4afc-8ae9-e82758d50a7c"
+      },
+      {
+        "id": "9a9f42c3-e960-4a7e-a5a5-914adfef0991",
+        "expected_quantity": 63897,
+        "received_quantity": 56998,
+        "divergence_divergence": 18416,
+        "analysis_date": "2023-09-12T14:04:13.307Z",
+        "created_at": "2023-09-12T12:45:31.164Z",
+        "updated_at": "2023-09-12T22:12:38.294Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "6198e647-ae2b-4afc-8ae9-e82758d50a7c"
+      },
+      {
+        "id": "25ed2c1b-a825-476d-9987-176277174ab6",
+        "expected_quantity": 58641,
+        "received_quantity": 72527,
+        "divergence_divergence": 77407,
+        "analysis_date": "2023-09-12T08:45:45.230Z",
+        "created_at": "2023-09-12T00:56:23.053Z",
+        "updated_at": "2023-09-12T19:21:03.379Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "7f6e9364-432e-4a27-85ee-0f3be76197b8"
+      }
+    ],
+    "balance": [
+      {
+        "id": "339b5c15-675b-4e04-bd20-4e62b2260a0f",
+        "total_amount": 34245,
+        "paid_amount": 43147,
+        "due_amount": 42405,
+        "last_payment_date": "2023-09-12T21:30:12.493Z",
+        "next_payment_date": "2023-09-12T19:45:25.134Z",
+        "created_at": "2023-09-12T19:43:13.648Z",
+        "updated_at": "2023-09-12T18:49:07.194Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "6de14f1e-f84f-4d2e-9504-cbded0bd7347",
+        "total_amount": 17654,
+        "paid_amount": 39745,
+        "due_amount": 82206,
+        "last_payment_date": "2023-09-12T07:59:40.702Z",
+        "next_payment_date": "2023-09-12T05:51:26.249Z",
+        "created_at": "2023-09-12T03:09:48.044Z",
+        "updated_at": "2023-09-12T16:07:29.181Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "7892ae94-dfad-4c48-9a08-88552dbce771",
+        "total_amount": 31318,
+        "paid_amount": 96010,
+        "due_amount": 19122,
+        "last_payment_date": "2023-09-12T10:18:19.240Z",
+        "next_payment_date": "2023-09-12T14:27:35.787Z",
+        "created_at": "2023-09-12T23:22:42.648Z",
+        "updated_at": "2023-09-12T11:23:26.566Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "e6734ff5-a73b-4d1f-85ea-aafd8f179022",
+        "total_amount": 18681,
+        "paid_amount": 52814,
+        "due_amount": 64747,
+        "last_payment_date": "2023-09-12T21:13:25.581Z",
+        "next_payment_date": "2023-09-12T04:57:22.983Z",
+        "created_at": "2023-09-12T06:29:49.284Z",
+        "updated_at": "2023-09-12T21:35:08.945Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "1ae79119-84e5-432c-9bc1-bdb3ba637c29",
+        "total_amount": 78613,
+        "paid_amount": 35188,
+        "due_amount": 61246,
+        "last_payment_date": "2023-09-12T19:18:32.120Z",
+        "next_payment_date": "2023-09-12T08:31:01.940Z",
+        "created_at": "2023-09-12T01:44:16.526Z",
+        "updated_at": "2023-09-13T00:16:15.066Z",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "b79a3929-4e40-4a8b-8a8d-ee56af39bfa8",
+        "email": "Alfredo_Pollich@yahoo.com",
+        "firstName": "Royal",
+        "lastName": "Turcotte",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/537.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "7d6e41ef-3fd9-4a7d-85e3-fa94bd7c050f",
+        "email": "Milton_Steuber99@hotmail.com",
+        "firstName": "Carson",
+        "lastName": "Jenkins",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/271.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "d8c384ae-ff4f-49ca-b540-42bb2911dc5c",
+        "email": "Dorthy.Keeling@yahoo.com",
+        "firstName": "Enid",
+        "lastName": "Zemlak",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/874.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "49f459da-b8dd-4c77-8279-80eddcdd9fac",
+        "email": "Elbert.Prohaska@yahoo.com",
+        "firstName": "Kenya",
+        "lastName": "McClure",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/210.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "5156a77d-22fc-49c6-882b-851e74de79d8",
+        "email": "Dusty_Bartoletti93@hotmail.com",
+        "firstName": "Durward",
+        "lastName": "Schmidt",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/9374757",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "goods": [
+      {
+        "id": "4b926d07-1c52-4ead-bf6f-04eb2e91d53f",
+        "name": "Good 1",
+        "quantity": 28096,
+        "received_date": "2023-09-12T07:47:32.938Z",
+        "status": "Status 1",
+        "created_at": "2023-09-12T14:39:16.117Z",
+        "updated_at": "2023-09-12T10:20:01.462Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "82aafd6c-beb7-4627-9bd2-083b574de2bb",
+        "name": "Good 2",
+        "quantity": 44902,
+        "received_date": "2023-09-12T23:48:54.610Z",
+        "status": "Status 2",
+        "created_at": "2023-09-12T12:43:55.012Z",
+        "updated_at": "2023-09-12T08:03:12.170Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "71f4e44b-566a-41a1-b829-ed7533f32cdf",
+        "name": "Good 3",
+        "quantity": 87746,
+        "received_date": "2023-09-12T01:55:22.213Z",
+        "status": "Status 3",
+        "created_at": "2023-09-12T13:09:58.925Z",
+        "updated_at": "2023-09-12T13:45:06.736Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "57fda7b7-c233-4fd8-b659-d3ab3ee08b7f",
+        "name": "Good 4",
+        "quantity": 56407,
+        "received_date": "2023-09-12T14:22:40.657Z",
+        "status": "Status 4",
+        "created_at": "2023-09-12T20:32:36.047Z",
+        "updated_at": "2023-09-12T11:25:00.475Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "7ad1a096-89cf-4c22-8b2f-bda5fc5bbc88",
+        "name": "Good 5",
+        "quantity": 54331,
+        "received_date": "2023-09-12T19:35:10.902Z",
+        "status": "Status 5",
+        "created_at": "2023-09-12T16:36:42.824Z",
+        "updated_at": "2023-09-12T16:01:41.801Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "6ff8b877-dc3f-4053-a5f9-4bfad38aa550",
+        "quantity": 28490,
+        "last_updated": "2023-09-12T01:52:23.174Z",
+        "updated_by": "user_entity_pk",
+        "status": "Inventory Status 1",
+        "location": "Location 1",
+        "created_at": "2023-09-12T09:30:29.600Z",
+        "updated_at": "2023-09-12T13:03:59.420Z",
+        "goods_id": "7ad1a096-89cf-4c22-8b2f-bda5fc5bbc88"
+      },
+      {
+        "id": "961ef235-2b14-4094-b25d-0c1f4988b8d8",
+        "quantity": 29665,
+        "last_updated": "2023-09-13T00:38:07.018Z",
+        "updated_by": "user_entity_pk",
+        "status": "Inventory Status 2",
+        "location": "Location 2",
+        "created_at": "2023-09-12T03:38:34.526Z",
+        "updated_at": "2023-09-12T12:15:02.824Z",
+        "goods_id": "71f4e44b-566a-41a1-b829-ed7533f32cdf"
+      },
+      {
+        "id": "a5008685-701a-40b1-a483-42373eae568e",
+        "quantity": 54224,
+        "last_updated": "2023-09-12T16:49:01.617Z",
+        "updated_by": "user_entity_pk",
+        "status": "Inventory Status 3",
+        "location": "Location 3",
+        "created_at": "2023-09-12T02:54:40.241Z",
+        "updated_at": "2023-09-12T16:55:49.094Z",
+        "goods_id": "57fda7b7-c233-4fd8-b659-d3ab3ee08b7f"
+      },
+      {
+        "id": "0be4a1e3-e2b2-4883-a4c5-804a871fa8bb",
+        "quantity": 83885,
+        "last_updated": "2023-09-12T04:05:21.809Z",
+        "updated_by": "user_entity_pk",
+        "status": "Inventory Status 4",
+        "location": "Location 4",
+        "created_at": "2023-09-12T20:57:29.751Z",
+        "updated_at": "2023-09-12T22:09:53.571Z",
+        "goods_id": "82aafd6c-beb7-4627-9bd2-083b574de2bb"
+      },
+      {
+        "id": "1ee05085-0040-48aa-8979-764e960bc1f9",
+        "quantity": 74919,
+        "last_updated": "2023-09-12T05:11:32.855Z",
+        "updated_by": "user_entity_pk",
+        "status": "Inventory Status 5",
+        "location": "Location 5",
+        "created_at": "2023-09-12T21:08:01.693Z",
+        "updated_at": "2023-09-12T17:52:03.363Z",
+        "goods_id": "57fda7b7-c233-4fd8-b659-d3ab3ee08b7f"
+      }
+    ],
+    "divergence": [
+      {
+        "id": "6ca60b02-81e7-4850-9371-8965706041a5",
+        "expected_quantity": 76601,
+        "received_quantity": 81172,
+        "divergence_divergence": 41459,
+        "analysis_date": "2023-09-12T16:54:56.009Z",
+        "created_at": "2023-09-12T05:37:38.444Z",
+        "updated_at": "2023-09-12T20:16:35.119Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "4b926d07-1c52-4ead-bf6f-04eb2e91d53f"
+      },
+      {
+        "id": "8c78e69a-fa7c-40d5-a89c-c77098e26c60",
+        "expected_quantity": 446,
+        "received_quantity": 63202,
+        "divergence_divergence": 24301,
+        "analysis_date": "2023-09-12T13:00:39.025Z",
+        "created_at": "2023-09-12T23:50:57.442Z",
+        "updated_at": "2023-09-12T21:49:32.994Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "7ad1a096-89cf-4c22-8b2f-bda5fc5bbc88"
+      },
+      {
+        "id": "e94d1ba9-8b81-4c15-aa17-e25425ecd7a7",
+        "expected_quantity": 54134,
+        "received_quantity": 30421,
+        "divergence_divergence": 62657,
+        "analysis_date": "2023-09-12T07:03:28.413Z",
+        "created_at": "2023-09-12T06:40:09.195Z",
+        "updated_at": "2023-09-12T19:15:21.075Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "57fda7b7-c233-4fd8-b659-d3ab3ee08b7f"
+      },
+      {
+        "id": "5c797264-0c35-40c7-b6bd-4e2d856107bc",
+        "expected_quantity": 964,
+        "received_quantity": 62317,
+        "divergence_divergence": 26469,
+        "analysis_date": "2023-09-12T01:09:14.597Z",
+        "created_at": "2023-09-12T03:16:57.426Z",
+        "updated_at": "2023-09-12T13:21:51.396Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "4b926d07-1c52-4ead-bf6f-04eb2e91d53f"
+      },
+      {
+        "id": "31f17cbc-c626-4ddc-b6a4-3639179b32e9",
+        "expected_quantity": 22567,
+        "received_quantity": 96226,
+        "divergence_divergence": 49714,
+        "analysis_date": "2023-09-12T22:45:44.695Z",
+        "created_at": "2023-09-12T14:18:41.726Z",
+        "updated_at": "2023-09-12T12:52:41.906Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "82aafd6c-beb7-4627-9bd2-083b574de2bb"
+      }
+    ],
+    "balance": [
+      {
+        "id": "0bdf34df-74fc-42e3-9ac2-95e9947d7691",
+        "total_amount": 80051,
+        "paid_amount": 97202,
+        "due_amount": 1104,
+        "last_payment_date": "2023-09-12T21:44:28.978Z",
+        "next_payment_date": "2023-09-12T22:35:02.729Z",
+        "created_at": "2023-09-12T03:16:31.067Z",
+        "updated_at": "2023-09-12T07:09:52.534Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "80129581-360e-4564-9099-39cc83e7b27e",
+        "total_amount": 82632,
+        "paid_amount": 31365,
+        "due_amount": 96040,
+        "last_payment_date": "2023-09-12T04:04:05.229Z",
+        "next_payment_date": "2023-09-13T00:14:03.539Z",
+        "created_at": "2023-09-12T14:53:11.299Z",
+        "updated_at": "2023-09-12T11:53:44.422Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "98d6af58-c7c9-437f-bd02-4f50a71b25bb",
+        "total_amount": 24001,
+        "paid_amount": 60762,
+        "due_amount": 21957,
+        "last_payment_date": "2023-09-12T04:26:36.777Z",
+        "next_payment_date": "2023-09-12T14:52:15.677Z",
+        "created_at": "2023-09-12T04:57:46.404Z",
+        "updated_at": "2023-09-12T22:26:15.496Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "979921a6-13f0-4752-851a-b47cf97e7c42",
+        "total_amount": 51129,
+        "paid_amount": 50768,
+        "due_amount": 91336,
+        "last_payment_date": "2023-09-12T01:25:16.530Z",
+        "next_payment_date": "2023-09-12T23:21:42.653Z",
+        "created_at": "2023-09-12T06:34:42.833Z",
+        "updated_at": "2023-09-12T14:19:33.465Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "d7f42802-ae1c-44d6-81fa-3a38c293b239",
+        "total_amount": 60463,
+        "paid_amount": 39756,
+        "due_amount": 72385,
+        "last_payment_date": "2023-09-12T15:05:05.879Z",
+        "next_payment_date": "2023-09-12T01:57:42.594Z",
+        "created_at": "2023-09-12T23:59:16.091Z",
+        "updated_at": "2023-09-12T13:12:53.209Z",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "efe663ee-08af-46f1-a913-794391a6872a",
+        "email": "Elizabeth_Williamson98@hotmail.com",
+        "firstName": "Norberto",
+        "lastName": "Morar",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/54960997",
+        "tenantId": null
+      },
+      {
+        "reference": "7393f922-204d-4938-9632-5ca037026179",
+        "email": "Catalina6@yahoo.com",
+        "firstName": "Ruben",
+        "lastName": "Hahn",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/374.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "ddf0e0e3-9957-4cc8-b915-084b688336c3",
+        "email": "Jaycee.Gusikowski@gmail.com",
+        "firstName": "Josiah",
+        "lastName": "Marks",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21506861",
+        "tenantId": null
+      },
+      {
+        "reference": "dc7678d3-84fe-41a7-92c3-21a7a89c2c5d",
+        "email": "Elinor_Lindgren@hotmail.com",
+        "firstName": "May",
+        "lastName": "Goodwin",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1164.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "f4bce6d3-7d7b-48d3-80a2-509cff64e750",
+        "email": "Earl_Williamson@yahoo.com",
+        "firstName": "Angelica",
+        "lastName": "Simonis",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1164.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "goods": [
+      {
+        "id": "ea742721-db6b-4619-b5eb-507028e2e8e7",
+        "name": "Product A",
+        "quantity": 28939,
+        "received_date": "2023-09-12T14:57:42.469Z",
+        "status": "Available",
+        "created_at": "2023-09-12T18:05:30.421Z",
+        "updated_at": "2023-09-12T03:37:52.397Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "8370e393-f3ae-414e-8644-b200bfd44d43",
+        "name": "Product B",
+        "quantity": 4943,
+        "received_date": "2023-09-12T18:53:11.391Z",
+        "status": "Out of stock",
+        "created_at": "2023-09-12T16:33:23.108Z",
+        "updated_at": "2023-09-12T01:52:39.323Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "f33bdc8e-d514-4eb3-ab9d-352989ac4cb9",
+        "name": "Product C",
+        "quantity": 98096,
+        "received_date": "2023-09-12T01:26:53.062Z",
+        "status": "Limited stock",
+        "created_at": "2023-09-12T21:00:40.416Z",
+        "updated_at": "2023-09-12T04:23:55.508Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "6a657c2a-b84e-444a-8840-ede7977ada1d",
+        "name": "Product D",
+        "quantity": 18928,
+        "received_date": "2023-09-12T01:45:59.133Z",
+        "status": "Coming soon",
+        "created_at": "2023-09-12T01:42:02.910Z",
+        "updated_at": "2023-09-12T02:37:12.519Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "248cfd22-1794-4040-8325-254fe3ba6a78",
+        "name": "Product E",
+        "quantity": 29913,
+        "received_date": "2023-09-12T23:17:26.695Z",
+        "status": "Pre-order",
+        "created_at": "2023-09-12T18:56:43.325Z",
+        "updated_at": "2023-09-12T14:51:46.827Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "2ac135ca-1a8d-41c6-b728-6f8c0cc5107e",
+        "quantity": 72596,
+        "last_updated": "2023-09-12T16:01:47.907Z",
+        "updated_by": "user_entity_pk",
+        "status": "In stock",
+        "location": "Warehouse A",
+        "created_at": "2023-09-12T03:02:46.590Z",
+        "updated_at": "2023-09-12T02:23:46.513Z",
+        "goods_id": "8370e393-f3ae-414e-8644-b200bfd44d43"
+      },
+      {
+        "id": "d61b7f0c-f78c-4de7-8732-24b78397bd21",
+        "quantity": 6964,
+        "last_updated": "2023-09-12T20:01:11.827Z",
+        "updated_by": "user_entity_pk",
+        "status": "Out of stock",
+        "location": "Warehouse B",
+        "created_at": "2023-09-12T02:25:22.625Z",
+        "updated_at": "2023-09-12T16:42:03.959Z",
+        "goods_id": "ea742721-db6b-4619-b5eb-507028e2e8e7"
+      },
+      {
+        "id": "8bc31f08-deeb-46fb-a8b5-75fac319c9c1",
+        "quantity": 21983,
+        "last_updated": "2023-09-12T10:14:43.836Z",
+        "updated_by": "user_entity_pk",
+        "status": "Low stock",
+        "location": "Warehouse C",
+        "created_at": "2023-09-12T17:28:43.922Z",
+        "updated_at": "2023-09-12T10:28:06.986Z",
+        "goods_id": "6a657c2a-b84e-444a-8840-ede7977ada1d"
+      },
+      {
+        "id": "20c5d10b-5b3f-466b-9838-9413e20cf42c",
+        "quantity": 46451,
+        "last_updated": "2023-09-12T06:14:43.115Z",
+        "updated_by": "user_entity_pk",
+        "status": "Available",
+        "location": "Warehouse D",
+        "created_at": "2023-09-12T08:03:23.334Z",
+        "updated_at": "2023-09-12T15:09:14.822Z",
+        "goods_id": "248cfd22-1794-4040-8325-254fe3ba6a78"
+      },
+      {
+        "id": "59bb6b38-55d3-4b1e-b641-c2bcfad47121",
+        "quantity": 36515,
+        "last_updated": "2023-09-12T19:18:47.169Z",
+        "updated_by": "user_entity_pk",
+        "status": "Sold out",
+        "location": "Warehouse E",
+        "created_at": "2023-09-12T02:09:40.857Z",
+        "updated_at": "2023-09-12T13:44:36.505Z",
+        "goods_id": "ea742721-db6b-4619-b5eb-507028e2e8e7"
+      }
+    ],
+    "divergence": [
+      {
+        "id": "a5fff5cf-da08-4ec3-a800-19e25755cc1b",
+        "expected_quantity": 27457,
+        "received_quantity": 17476,
+        "divergence_divergence": 71402,
+        "analysis_date": "2023-09-12T16:52:03.784Z",
+        "created_at": "2023-09-12T21:36:01.401Z",
+        "updated_at": "2023-09-12T04:53:18.089Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "248cfd22-1794-4040-8325-254fe3ba6a78"
+      },
+      {
+        "id": "395f7a4c-8863-4dba-bf85-97fbadb9e75b",
+        "expected_quantity": 54511,
+        "received_quantity": 45798,
+        "divergence_divergence": 86780,
+        "analysis_date": "2023-09-12T05:09:20.215Z",
+        "created_at": "2023-09-12T16:42:03.055Z",
+        "updated_at": "2023-09-12T06:31:31.169Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "ea742721-db6b-4619-b5eb-507028e2e8e7"
+      },
+      {
+        "id": "2580f5c1-2204-43e7-a8ff-0fcac09d8083",
+        "expected_quantity": 91740,
+        "received_quantity": 95501,
+        "divergence_divergence": 25679,
+        "analysis_date": "2023-09-12T12:59:48.846Z",
+        "created_at": "2023-09-12T12:10:30.538Z",
+        "updated_at": "2023-09-12T14:44:00.681Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "8370e393-f3ae-414e-8644-b200bfd44d43"
+      },
+      {
+        "id": "3da8b1a5-b225-458b-b06b-12c135fadf06",
+        "expected_quantity": 34126,
+        "received_quantity": 64044,
+        "divergence_divergence": 29620,
+        "analysis_date": "2023-09-12T02:41:21.531Z",
+        "created_at": "2023-09-12T08:38:32.385Z",
+        "updated_at": "2023-09-12T14:35:50.043Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "248cfd22-1794-4040-8325-254fe3ba6a78"
+      },
+      {
+        "id": "de333354-669e-4e0d-b207-4b2ce84eee8e",
+        "expected_quantity": 7928,
+        "received_quantity": 90295,
+        "divergence_divergence": 61078,
+        "analysis_date": "2023-09-12T23:13:14.648Z",
+        "created_at": "2023-09-12T13:25:49.570Z",
+        "updated_at": "2023-09-12T12:44:34.634Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "248cfd22-1794-4040-8325-254fe3ba6a78"
+      }
+    ],
+    "balance": [
+      {
+        "id": "0e32383d-4fd8-455a-9ef5-11d94530988e",
+        "total_amount": 55895,
+        "paid_amount": 61737,
+        "due_amount": 27762,
+        "last_payment_date": "2023-09-12T23:15:18.679Z",
+        "next_payment_date": "2023-09-12T10:15:24.956Z",
+        "created_at": "2023-09-12T03:39:13.090Z",
+        "updated_at": "2023-09-12T20:18:10.062Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "491d0697-d155-47cb-9573-e8fa65d1c342",
+        "total_amount": 56366,
+        "paid_amount": 17118,
+        "due_amount": 6793,
+        "last_payment_date": "2023-09-12T02:45:04.602Z",
+        "next_payment_date": "2023-09-12T04:50:18.749Z",
+        "created_at": "2023-09-12T22:00:32.531Z",
+        "updated_at": "2023-09-13T00:16:05.338Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "2397a65b-b7fd-45cd-afb7-48a876abf66e",
+        "total_amount": 22669,
+        "paid_amount": 32441,
+        "due_amount": 65953,
+        "last_payment_date": "2023-09-12T02:54:49.346Z",
+        "next_payment_date": "2023-09-12T18:27:38.319Z",
+        "created_at": "2023-09-12T19:11:47.426Z",
+        "updated_at": "2023-09-12T20:37:36.470Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "f3855a22-2dd4-4974-9279-a9129d9085f1",
+        "total_amount": 29360,
+        "paid_amount": 83546,
+        "due_amount": 52167,
+        "last_payment_date": "2023-09-12T15:10:32.563Z",
+        "next_payment_date": "2023-09-12T04:24:10.601Z",
+        "created_at": "2023-09-13T00:20:27.846Z",
+        "updated_at": "2023-09-12T20:40:40.067Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "ec8ae989-9474-488d-97ec-5d39fb85e1be",
+        "total_amount": 24900,
+        "paid_amount": 50137,
+        "due_amount": 61423,
+        "last_payment_date": "2023-09-12T10:39:07.010Z",
+        "next_payment_date": "2023-09-12T09:02:22.369Z",
+        "created_at": "2023-09-12T11:53:37.417Z",
+        "updated_at": "2023-09-12T00:55:02.879Z",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "5668d928-33ea-4098-88b5-15dc738b783f",
+        "email": "Dejon36@gmail.com",
+        "firstName": "Lonnie",
+        "lastName": "Stanton",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/49404145",
+        "tenantId": null
+      },
+      {
+        "reference": "9473c55d-bd08-4224-b6ce-ae5467023219",
+        "email": "Rosamond63@hotmail.com",
+        "firstName": "Lorena",
+        "lastName": "Wintheiser",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/77181932",
+        "tenantId": null
+      },
+      {
+        "reference": "e1ac2a99-4914-4a74-ac9c-c949f0aab378",
+        "email": "Valentina_Jacobs@gmail.com",
+        "firstName": "Alvis",
+        "lastName": "Hermann",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/310.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1b90d199-d5f5-45f9-a18b-be60690a7855",
+        "email": "Salvatore38@yahoo.com",
+        "firstName": "Mohammad",
+        "lastName": "Boyle",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/23993438",
+        "tenantId": null
+      },
+      {
+        "reference": "8acae303-de7a-49e0-b9cd-7517ae330fa5",
+        "email": "Amalia_Wisoky@yahoo.com",
+        "firstName": "Devyn",
+        "lastName": "Oberbrunner",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/60389155",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "goods": [
+      {
+        "id": "1f1a972b-c27b-42fe-8a12-13785bc6fea8",
+        "name": "Product A",
+        "quantity": 16307,
+        "received_date": "2023-09-12T06:00:20.762Z",
+        "status": "Available",
+        "created_at": "2023-09-12T20:33:58.838Z",
+        "updated_at": "2023-09-12T08:18:08.156Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "8ac0587a-f331-45f2-8afe-048d31b01197",
+        "name": "Product B",
+        "quantity": 85004,
+        "received_date": "2023-09-12T19:02:25.805Z",
+        "status": "Out of stock",
+        "created_at": "2023-09-12T19:11:45.938Z",
+        "updated_at": "2023-09-12T19:21:36.159Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "52feb0ef-6d9d-4cf3-8775-ed965d183b54",
+        "name": "Product C",
+        "quantity": 38054,
+        "received_date": "2023-09-12T02:04:32.521Z",
+        "status": "On backorder",
+        "created_at": "2023-09-12T18:43:00.896Z",
+        "updated_at": "2023-09-12T01:03:32.548Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "96dd0a39-1b76-4578-b13b-9b9a7bb14019",
+        "name": "Product D",
+        "quantity": 20840,
+        "received_date": "2023-09-12T16:48:36.408Z",
+        "status": "Discontinued",
+        "created_at": "2023-09-12T20:23:56.682Z",
+        "updated_at": "2023-09-12T17:40:12.396Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "9c326ad1-9b2b-4b9e-9276-dc789293752b",
+        "name": "Product E",
+        "quantity": 69636,
+        "received_date": "2023-09-12T05:22:45.575Z",
+        "status": "In transit",
+        "created_at": "2023-09-12T03:17:42.892Z",
+        "updated_at": "2023-09-12T22:55:49.701Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "59f34f2d-5281-41a5-91cd-f3afc15aae33",
+        "quantity": 91190,
+        "last_updated": "2023-09-12T16:00:50.220Z",
+        "updated_by": "user_entity_pk",
+        "status": "Active",
+        "location": "Warehouse A",
+        "created_at": "2023-09-12T21:54:19.433Z",
+        "updated_at": "2023-09-12T04:58:01.403Z",
+        "goods_id": "1f1a972b-c27b-42fe-8a12-13785bc6fea8"
+      },
+      {
+        "id": "8eed7149-4f0d-4395-a4aa-a85f246143b8",
+        "quantity": 45636,
+        "last_updated": "2023-09-12T10:45:50.047Z",
+        "updated_by": "user_entity_pk",
+        "status": "Inactive",
+        "location": "Warehouse B",
+        "created_at": "2023-09-12T19:57:59.364Z",
+        "updated_at": "2023-09-12T22:44:33.363Z",
+        "goods_id": "8ac0587a-f331-45f2-8afe-048d31b01197"
+      },
+      {
+        "id": "003e6f60-a828-48f4-8c7e-39f28d919ef4",
+        "quantity": 45047,
+        "last_updated": "2023-09-12T08:43:51.793Z",
+        "updated_by": "user_entity_pk",
+        "status": "Pending",
+        "location": "Warehouse C",
+        "created_at": "2023-09-12T06:36:42.247Z",
+        "updated_at": "2023-09-12T08:36:19.314Z",
+        "goods_id": "96dd0a39-1b76-4578-b13b-9b9a7bb14019"
+      },
+      {
+        "id": "f346f1e2-8f63-4a9a-8224-54a61019d916",
+        "quantity": 83594,
+        "last_updated": "2023-09-12T03:26:13.323Z",
+        "updated_by": "user_entity_pk",
+        "status": "Blocked",
+        "location": "Warehouse D",
+        "created_at": "2023-09-12T08:43:00.946Z",
+        "updated_at": "2023-09-12T22:13:27.171Z",
+        "goods_id": "1f1a972b-c27b-42fe-8a12-13785bc6fea8"
+      },
+      {
+        "id": "bac44f22-ebfa-47f1-b5c5-e98b9aa138a9",
+        "quantity": 81124,
+        "last_updated": "2023-09-12T19:01:07.010Z",
+        "updated_by": "user_entity_pk",
+        "status": "Archived",
+        "location": "Warehouse E",
+        "created_at": "2023-09-12T05:17:08.222Z",
+        "updated_at": "2023-09-12T14:15:56.028Z",
+        "goods_id": "1f1a972b-c27b-42fe-8a12-13785bc6fea8"
+      }
+    ],
+    "divergence": [
+      {
+        "id": "dbf5898a-1796-4803-8558-126b71ae87bf",
+        "expected_quantity": 32331,
+        "received_quantity": 3538,
+        "divergence_divergence": 58230,
+        "analysis_date": "2023-09-12T14:53:39.365Z",
+        "created_at": "2023-09-12T16:29:09.066Z",
+        "updated_at": "2023-09-12T11:15:05.818Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "52feb0ef-6d9d-4cf3-8775-ed965d183b54"
+      },
+      {
+        "id": "23f65830-1161-47c3-899e-be476ed5ab9a",
+        "expected_quantity": 27104,
+        "received_quantity": 18982,
+        "divergence_divergence": 45328,
+        "analysis_date": "2023-09-13T00:22:06.755Z",
+        "created_at": "2023-09-12T06:55:03.158Z",
+        "updated_at": "2023-09-12T16:58:57.315Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "52feb0ef-6d9d-4cf3-8775-ed965d183b54"
+      },
+      {
+        "id": "5a3ab78a-31ae-43d9-8ad3-292d6acbcdad",
+        "expected_quantity": 83163,
+        "received_quantity": 87392,
+        "divergence_divergence": 30622,
+        "analysis_date": "2023-09-12T13:25:03.917Z",
+        "created_at": "2023-09-13T00:47:02.781Z",
+        "updated_at": "2023-09-12T19:00:08.391Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "8ac0587a-f331-45f2-8afe-048d31b01197"
+      },
+      {
+        "id": "bf0b554d-5631-4272-8f38-6f3c413e7b93",
+        "expected_quantity": 20867,
+        "received_quantity": 16429,
+        "divergence_divergence": 56790,
+        "analysis_date": "2023-09-12T15:33:53.200Z",
+        "created_at": "2023-09-12T21:52:42.793Z",
+        "updated_at": "2023-09-12T04:57:02.545Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "9c326ad1-9b2b-4b9e-9276-dc789293752b"
+      },
+      {
+        "id": "5a5370d3-085d-412d-80ff-293782bea8e6",
+        "expected_quantity": 137,
+        "received_quantity": 14483,
+        "divergence_divergence": 68230,
+        "analysis_date": "2023-09-12T13:56:49.877Z",
+        "created_at": "2023-09-12T15:59:00.797Z",
+        "updated_at": "2023-09-12T15:28:08.700Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "96dd0a39-1b76-4578-b13b-9b9a7bb14019"
+      }
+    ],
+    "balance": [
+      {
+        "id": "dd7412eb-a28f-4ff4-bd33-de4a3edca023",
+        "total_amount": 26708,
+        "paid_amount": 62467,
+        "due_amount": 15927,
+        "last_payment_date": "2023-09-12T13:12:22.616Z",
+        "next_payment_date": "2023-09-12T10:04:15.680Z",
+        "created_at": "2023-09-12T22:45:46.744Z",
+        "updated_at": "2023-09-12T14:02:37.855Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "b6c5b901-c864-48ac-9944-d46bad3a968a",
+        "total_amount": 47058,
+        "paid_amount": 28818,
+        "due_amount": 32783,
+        "last_payment_date": "2023-09-13T00:08:44.143Z",
+        "next_payment_date": "2023-09-12T13:45:10.576Z",
+        "created_at": "2023-09-12T08:10:54.105Z",
+        "updated_at": "2023-09-12T09:44:49.379Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "a70365ce-1fa9-4530-90e4-39750bd977ad",
+        "total_amount": 38159,
+        "paid_amount": 59400,
+        "due_amount": 79076,
+        "last_payment_date": "2023-09-12T16:19:14.735Z",
+        "next_payment_date": "2023-09-12T21:44:48.545Z",
+        "created_at": "2023-09-12T03:36:58.819Z",
+        "updated_at": "2023-09-12T16:08:16.729Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "9227cb1a-d428-42b3-a9a1-7c6ae4071152",
+        "total_amount": 83882,
+        "paid_amount": 91193,
+        "due_amount": 46659,
+        "last_payment_date": "2023-09-12T05:54:37.394Z",
+        "next_payment_date": "2023-09-12T23:18:05.141Z",
+        "created_at": "2023-09-12T23:41:39.707Z",
+        "updated_at": "2023-09-12T23:28:53.489Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "fe208c39-2e52-4593-9389-7dfe0276e348",
+        "total_amount": 29617,
+        "paid_amount": 35290,
+        "due_amount": 23601,
+        "last_payment_date": "2023-09-12T13:37:36.166Z",
+        "next_payment_date": "2023-09-12T06:22:34.313Z",
+        "created_at": "2023-09-13T00:32:26.059Z",
+        "updated_at": "2023-09-12T07:45:23.882Z",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "dd7caf26-6012-4eed-bc3e-a1889ffa860a",
+        "email": "Itzel.Farrell55@gmail.com",
+        "firstName": "Abe",
+        "lastName": "Dickens",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/558.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "f8354bb7-bbd5-4864-bbb5-95e67469d35e",
+        "email": "Whitney_Heathcote@yahoo.com",
+        "firstName": "Robin",
+        "lastName": "Miller",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/46419750",
+        "tenantId": null
+      },
+      {
+        "reference": "3ad6b85d-35da-4581-8e41-a8e4b5be5e22",
+        "email": "Shanelle.Nolan@yahoo.com",
+        "firstName": "Antone",
+        "lastName": "MacGyver-Daugherty",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1154.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "7f44c227-4d3c-43d9-b200-3ec3660b0766",
+        "email": "Cesar48@yahoo.com",
+        "firstName": "Lily",
+        "lastName": "Leffler",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/707.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "518bd847-c0cd-414f-a69f-56d0caf58164",
+        "email": "Arnulfo.Cremin51@gmail.com",
+        "firstName": "Kaitlyn",
+        "lastName": "Osinski",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1070.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "goods": [
+      {
+        "id": "6b6d3878-1794-47b4-90ed-14182cf791bc",
+        "name": "Product A",
+        "quantity": 89169,
+        "received_date": "2023-09-12T09:25:20.208Z",
+        "status": "Available",
+        "created_at": "2023-09-12T16:20:23.825Z",
+        "updated_at": "2023-09-12T05:45:08.570Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "2b51dd91-c7c1-4a0b-9077-5982eb96b2a1",
+        "name": "Product B",
+        "quantity": 37188,
+        "received_date": "2023-09-12T16:05:43.965Z",
+        "status": "Out of Stock",
+        "created_at": "2023-09-12T02:41:02.999Z",
+        "updated_at": "2023-09-12T20:43:55.348Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "e57f81b6-1f1c-45d7-8dab-f053d584c088",
+        "name": "Product C",
+        "quantity": 29120,
+        "received_date": "2023-09-12T14:14:05.394Z",
+        "status": "In Transit",
+        "created_at": "2023-09-12T06:23:33.339Z",
+        "updated_at": "2023-09-12T05:09:40.241Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "0defae95-9b0e-4ef3-a417-112b574ce041",
+        "name": "Product D",
+        "quantity": 20104,
+        "received_date": "2023-09-12T07:14:36.057Z",
+        "status": "Low Stock",
+        "created_at": "2023-09-12T18:18:55.953Z",
+        "updated_at": "2023-09-12T07:33:49.035Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "bbfe8821-1c21-4e71-a43c-4c67f5e54332",
+        "name": "Product E",
+        "quantity": 85922,
+        "received_date": "2023-09-12T08:17:03.719Z",
+        "status": "Discontinued",
+        "created_at": "2023-09-12T18:00:01.352Z",
+        "updated_at": "2023-09-13T00:23:38.080Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "a9a4fe30-ecd4-41b8-8429-ca4959c8d3f6",
+        "quantity": 32340,
+        "last_updated": "2023-09-12T11:39:07.930Z",
+        "updated_by": "user_entity_pk",
+        "status": "Active",
+        "location": "Warehouse A",
+        "created_at": "2023-09-12T07:07:13.573Z",
+        "updated_at": "2023-09-12T22:40:59.489Z",
+        "goods_id": "2b51dd91-c7c1-4a0b-9077-5982eb96b2a1"
+      },
+      {
+        "id": "24ffee7a-b62b-4343-a130-3b58705d94a8",
+        "quantity": 82898,
+        "last_updated": "2023-09-12T02:38:48.914Z",
+        "updated_by": "user_entity_pk",
+        "status": "Inactive",
+        "location": "Warehouse B",
+        "created_at": "2023-09-12T05:29:16.723Z",
+        "updated_at": "2023-09-12T01:47:02.484Z",
+        "goods_id": "2b51dd91-c7c1-4a0b-9077-5982eb96b2a1"
+      },
+      {
+        "id": "d8cc55b7-cdcd-4e34-a3cd-c08064bc9ba7",
+        "quantity": 63974,
+        "last_updated": "2023-09-12T08:24:47.030Z",
+        "updated_by": "user_entity_pk",
+        "status": "Pending",
+        "location": "Warehouse C",
+        "created_at": "2023-09-12T21:10:26.286Z",
+        "updated_at": "2023-09-13T00:25:42.298Z",
+        "goods_id": "0defae95-9b0e-4ef3-a417-112b574ce041"
+      },
+      {
+        "id": "7a88a4fb-5f7a-4e98-8b23-b3432a28a1b8",
+        "quantity": 58547,
+        "last_updated": "2023-09-12T21:50:53.574Z",
+        "updated_by": "user_entity_pk",
+        "status": "Completed",
+        "location": "Warehouse D",
+        "created_at": "2023-09-12T16:18:15.689Z",
+        "updated_at": "2023-09-12T04:00:25.874Z",
+        "goods_id": "e57f81b6-1f1c-45d7-8dab-f053d584c088"
+      },
+      {
+        "id": "23efd376-4815-4d29-9c3a-1de45ca01ad1",
+        "quantity": 54172,
+        "last_updated": "2023-09-12T22:59:09.170Z",
+        "updated_by": "user_entity_pk",
+        "status": "Cancelled",
+        "location": "Warehouse E",
+        "created_at": "2023-09-12T09:42:58.283Z",
+        "updated_at": "2023-09-12T12:43:45.348Z",
+        "goods_id": "0defae95-9b0e-4ef3-a417-112b574ce041"
+      }
+    ],
+    "divergence": [
+      {
+        "id": "e6f98605-3407-4107-8526-a0f2ad92a146",
+        "expected_quantity": 28313,
+        "received_quantity": 41060,
+        "divergence_divergence": 7938,
+        "analysis_date": "2023-09-12T22:17:21.196Z",
+        "created_at": "2023-09-12T01:54:05.076Z",
+        "updated_at": "2023-09-12T21:03:57.209Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "0defae95-9b0e-4ef3-a417-112b574ce041"
+      },
+      {
+        "id": "f7995717-20dd-4d94-9e7a-d5654a48e64c",
+        "expected_quantity": 63137,
+        "received_quantity": 72839,
+        "divergence_divergence": 59445,
+        "analysis_date": "2023-09-12T15:14:44.912Z",
+        "created_at": "2023-09-12T21:19:42.273Z",
+        "updated_at": "2023-09-12T09:27:37.042Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "bbfe8821-1c21-4e71-a43c-4c67f5e54332"
+      },
+      {
+        "id": "402fc0ca-bee9-426a-9da6-4d8a7e431402",
+        "expected_quantity": 51968,
+        "received_quantity": 45903,
+        "divergence_divergence": 56116,
+        "analysis_date": "2023-09-12T13:16:51.577Z",
+        "created_at": "2023-09-12T16:29:00.109Z",
+        "updated_at": "2023-09-12T07:30:38.638Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "6b6d3878-1794-47b4-90ed-14182cf791bc"
+      },
+      {
+        "id": "f153b544-504d-4171-92b6-5d516c22e3b4",
+        "expected_quantity": 29741,
+        "received_quantity": 2062,
+        "divergence_divergence": 13495,
+        "analysis_date": "2023-09-12T04:29:37.504Z",
+        "created_at": "2023-09-12T19:23:07.398Z",
+        "updated_at": "2023-09-12T06:52:55.183Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "bbfe8821-1c21-4e71-a43c-4c67f5e54332"
+      },
+      {
+        "id": "37f804e4-9ad8-4286-a732-3b519646e239",
+        "expected_quantity": 49638,
+        "received_quantity": 68101,
+        "divergence_divergence": 35109,
+        "analysis_date": "2023-09-12T12:28:36.598Z",
+        "created_at": "2023-09-12T14:41:31.002Z",
+        "updated_at": "2023-09-12T13:16:49.784Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "bbfe8821-1c21-4e71-a43c-4c67f5e54332"
+      }
+    ],
+    "balance": [
+      {
+        "id": "0a5cc23f-e19d-4a26-81c1-b142af05a829",
+        "total_amount": 31148,
+        "paid_amount": 65526,
+        "due_amount": 7450,
+        "last_payment_date": "2023-09-12T23:37:36.137Z",
+        "next_payment_date": "2023-09-12T02:15:35.686Z",
+        "created_at": "2023-09-12T16:51:27.652Z",
+        "updated_at": "2023-09-13T00:19:28.569Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "e32b8cda-ba18-40e4-ab36-26cc19e3a9e9",
+        "total_amount": 52081,
+        "paid_amount": 47197,
+        "due_amount": 42494,
+        "last_payment_date": "2023-09-12T23:13:28.421Z",
+        "next_payment_date": "2023-09-12T22:00:52.364Z",
+        "created_at": "2023-09-12T20:59:17.986Z",
+        "updated_at": "2023-09-12T04:58:14.746Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "e27785a2-42fa-4a50-b593-2cc6dd615b61",
+        "total_amount": 13494,
+        "paid_amount": 54911,
+        "due_amount": 70339,
+        "last_payment_date": "2023-09-12T01:46:49.989Z",
+        "next_payment_date": "2023-09-12T23:42:26.204Z",
+        "created_at": "2023-09-12T13:58:31.133Z",
+        "updated_at": "2023-09-12T18:04:40.643Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "65f8f7b4-5f5e-476d-9fc1-3298dbfec9e6",
+        "total_amount": 25288,
+        "paid_amount": 51667,
+        "due_amount": 7353,
+        "last_payment_date": "2023-09-13T00:04:07.976Z",
+        "next_payment_date": "2023-09-12T16:21:03.166Z",
+        "created_at": "2023-09-12T02:56:57.327Z",
+        "updated_at": "2023-09-12T23:36:17.756Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "cce75fe1-6cd3-4263-bd2c-685343f47f11",
+        "total_amount": 29084,
+        "paid_amount": 30309,
+        "due_amount": 32055,
+        "last_payment_date": "2023-09-12T19:10:53.637Z",
+        "next_payment_date": "2023-09-12T01:40:33.066Z",
+        "created_at": "2023-09-12T06:37:11.597Z",
+        "updated_at": "2023-09-12T19:22:48.625Z",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "b9e687e2-b20d-41bc-882f-a764f3b69885",
+        "email": "Gianni75@yahoo.com",
+        "firstName": "Payton",
+        "lastName": "Batz",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/87492134",
+        "tenantId": null
+      },
+      {
+        "reference": "e411e134-14f1-4d5c-a001-cfd9765b1020",
+        "email": "Haley13@yahoo.com",
+        "firstName": "Vincent",
+        "lastName": "Jacobs",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/99995408",
+        "tenantId": null
+      },
+      {
+        "reference": "c1f335f2-ea52-43b6-a9cc-ce52c9054dd9",
+        "email": "Jewel_Tillman@yahoo.com",
+        "firstName": "Vesta",
+        "lastName": "Fritsch",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/553.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "779c60d3-e219-45fe-8cac-7b0946541aa8",
+        "email": "Zita93@gmail.com",
+        "firstName": "Jaylon",
+        "lastName": "Ritchie",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/63467509",
+        "tenantId": null
+      },
+      {
+        "reference": "3b2f78a0-946f-418c-a0c5-9bb586303fdf",
+        "email": "Dina.Funk@yahoo.com",
+        "firstName": "Evan",
+        "lastName": "Fahey",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1010.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "goods": [
+      {
+        "id": "bd3a4201-1c3b-47e4-af2f-fd3890d6da4c",
+        "name": "Product A",
+        "quantity": 22009,
+        "received_date": "2023-09-12T21:06:41.437Z",
+        "status": "Available",
+        "created_at": "2023-09-12T05:53:34.730Z",
+        "updated_at": "2023-09-12T19:43:40.499Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "ccc84368-c4d2-4b0a-adf8-8d57b7426bd5",
+        "name": "Product B",
+        "quantity": 25201,
+        "received_date": "2023-09-12T14:02:50.468Z",
+        "status": "Out of Stock",
+        "created_at": "2023-09-12T09:22:15.571Z",
+        "updated_at": "2023-09-12T06:45:49.759Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "e5b66825-dba3-46c7-a1aa-8c6d620965e5",
+        "name": "Product C",
+        "quantity": 70150,
+        "received_date": "2023-09-12T14:17:36.142Z",
+        "status": "In Transit",
+        "created_at": "2023-09-13T00:19:10.393Z",
+        "updated_at": "2023-09-12T11:35:26.399Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "b0d18581-d026-4e3d-84e7-75ef9865b953",
+        "name": "Product D",
+        "quantity": 5488,
+        "received_date": "2023-09-12T09:52:06.290Z",
+        "status": "Discontinued",
+        "created_at": "2023-09-12T11:15:50.930Z",
+        "updated_at": "2023-09-12T15:15:09.718Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "bb25e552-73a1-4558-9a31-e0fd8b800429",
+        "name": "Product E",
+        "quantity": 10239,
+        "received_date": "2023-09-12T20:20:48.614Z",
+        "status": "Low Stock",
+        "created_at": "2023-09-12T10:21:26.623Z",
+        "updated_at": "2023-09-12T10:40:48.881Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "ed76f50b-3bb0-4066-9913-4b09db02b218",
+        "quantity": 96292,
+        "last_updated": "2023-09-13T00:29:59.974Z",
+        "updated_by": "user_entity_pk",
+        "status": "Active",
+        "location": "Warehouse A",
+        "created_at": "2023-09-12T01:38:43.342Z",
+        "updated_at": "2023-09-12T20:32:11.529Z",
+        "goods_id": "ccc84368-c4d2-4b0a-adf8-8d57b7426bd5"
+      },
+      {
+        "id": "1d8e0d4a-f6aa-4776-b599-4ccd0cf5d974",
+        "quantity": 44223,
+        "last_updated": "2023-09-12T15:35:17.530Z",
+        "updated_by": "user_entity_pk",
+        "status": "Inactive",
+        "location": "Warehouse B",
+        "created_at": "2023-09-12T22:52:27.298Z",
+        "updated_at": "2023-09-12T17:37:34.044Z",
+        "goods_id": "bb25e552-73a1-4558-9a31-e0fd8b800429"
+      },
+      {
+        "id": "a83de6f4-8fea-4f13-90bc-f9f8f3d7eeac",
+        "quantity": 17733,
+        "last_updated": "2023-09-12T08:30:45.941Z",
+        "updated_by": "user_entity_pk",
+        "status": "Under Maintenance",
+        "location": "Warehouse C",
+        "created_at": "2023-09-12T07:47:50.218Z",
+        "updated_at": "2023-09-12T11:06:56.661Z",
+        "goods_id": "ccc84368-c4d2-4b0a-adf8-8d57b7426bd5"
+      },
+      {
+        "id": "5664b717-396a-41fc-b395-05babd534625",
+        "quantity": 21664,
+        "last_updated": "2023-09-12T20:22:55.696Z",
+        "updated_by": "user_entity_pk",
+        "status": "Damaged",
+        "location": "Warehouse D",
+        "created_at": "2023-09-12T22:01:09.124Z",
+        "updated_at": "2023-09-12T06:56:07.009Z",
+        "goods_id": "ccc84368-c4d2-4b0a-adf8-8d57b7426bd5"
+      },
+      {
+        "id": "65aa4c60-4991-4c73-b1aa-cf89f37f02d4",
+        "quantity": 67918,
+        "last_updated": "2023-09-12T21:16:21.147Z",
+        "updated_by": "user_entity_pk",
+        "status": "Lost",
+        "location": "Warehouse E",
+        "created_at": "2023-09-12T19:28:05.285Z",
+        "updated_at": "2023-09-12T13:57:36.865Z",
+        "goods_id": "b0d18581-d026-4e3d-84e7-75ef9865b953"
+      }
+    ],
+    "divergence": [
+      {
+        "id": "84428da0-dc9e-4381-89b9-ebfdc9e7d08f",
+        "expected_quantity": 53459,
+        "received_quantity": 49439,
+        "divergence_divergence": 20239,
+        "analysis_date": "2023-09-12T23:03:28.166Z",
+        "created_at": "2023-09-12T10:21:14.757Z",
+        "updated_at": "2023-09-13T00:03:17.291Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "ccc84368-c4d2-4b0a-adf8-8d57b7426bd5"
+      },
+      {
+        "id": "4d0a7f94-6b9f-48a2-a4c3-fbb43b64f854",
+        "expected_quantity": 5654,
+        "received_quantity": 41328,
+        "divergence_divergence": 35232,
+        "analysis_date": "2023-09-12T17:03:05.398Z",
+        "created_at": "2023-09-12T02:13:35.041Z",
+        "updated_at": "2023-09-13T00:44:13.077Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "b0d18581-d026-4e3d-84e7-75ef9865b953"
+      },
+      {
+        "id": "63a7c119-4dc6-4883-af46-22a6bb1183f9",
+        "expected_quantity": 63183,
+        "received_quantity": 67103,
+        "divergence_divergence": 64951,
+        "analysis_date": "2023-09-12T07:27:38.979Z",
+        "created_at": "2023-09-12T06:23:16.567Z",
+        "updated_at": "2023-09-12T06:05:38.635Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "bb25e552-73a1-4558-9a31-e0fd8b800429"
+      },
+      {
+        "id": "86d9cb35-4d77-493c-97c7-d6fdbef7c371",
+        "expected_quantity": 69520,
+        "received_quantity": 55396,
+        "divergence_divergence": 78138,
+        "analysis_date": "2023-09-12T17:43:30.065Z",
+        "created_at": "2023-09-12T02:54:22.749Z",
+        "updated_at": "2023-09-12T01:46:10.781Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "bb25e552-73a1-4558-9a31-e0fd8b800429"
+      },
+      {
+        "id": "c63a193d-0b53-408e-97d7-9de904874d45",
+        "expected_quantity": 30519,
+        "received_quantity": 4524,
+        "divergence_divergence": 8705,
+        "analysis_date": "2023-09-12T15:36:23.619Z",
+        "created_at": "2023-09-12T05:04:25.179Z",
+        "updated_at": "2023-09-12T16:12:13.860Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "ccc84368-c4d2-4b0a-adf8-8d57b7426bd5"
+      }
+    ],
+    "balance": [
+      {
+        "id": "b7ff74ac-ef62-41d9-98dd-e8cc7213bb88",
+        "total_amount": 60137,
+        "paid_amount": 88335,
+        "due_amount": 63429,
+        "last_payment_date": "2023-09-12T23:09:51.049Z",
+        "next_payment_date": "2023-09-12T19:44:15.666Z",
+        "created_at": "2023-09-12T05:54:18.973Z",
+        "updated_at": "2023-09-12T08:22:29.195Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "702060e1-26ea-4d1e-bc34-6eaaa50a7436",
+        "total_amount": 89608,
+        "paid_amount": 25011,
+        "due_amount": 84741,
+        "last_payment_date": "2023-09-12T22:24:47.995Z",
+        "next_payment_date": "2023-09-12T21:41:00.997Z",
+        "created_at": "2023-09-12T11:22:46.940Z",
+        "updated_at": "2023-09-12T17:42:15.792Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "51af0a16-65f4-4f8a-95b5-469ccb6fb1a8",
+        "total_amount": 52110,
+        "paid_amount": 21986,
+        "due_amount": 27487,
+        "last_payment_date": "2023-09-12T13:20:40.656Z",
+        "next_payment_date": "2023-09-12T23:20:58.164Z",
+        "created_at": "2023-09-12T15:14:51.708Z",
+        "updated_at": "2023-09-12T20:16:25.453Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "12a4669d-ecb0-445f-b3f2-4ccc3f867dc6",
+        "total_amount": 43757,
+        "paid_amount": 66413,
+        "due_amount": 45437,
+        "last_payment_date": "2023-09-12T14:05:02.220Z",
+        "next_payment_date": "2023-09-12T02:03:10.217Z",
+        "created_at": "2023-09-12T19:41:43.717Z",
+        "updated_at": "2023-09-12T03:41:56.571Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "9ffd96df-8acc-46c7-8a01-7637eb7e3ec5",
+        "total_amount": 34100,
+        "paid_amount": 55396,
+        "due_amount": 77845,
+        "last_payment_date": "2023-09-12T18:04:11.656Z",
+        "next_payment_date": "2023-09-12T20:59:50.286Z",
+        "created_at": "2023-09-12T15:31:07.832Z",
+        "updated_at": "2023-09-12T19:30:28.663Z",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "8d372e9e-cd2c-4d32-bc37-d47e10b4cd30",
+        "email": "Maxie.Langworth1@gmail.com",
+        "firstName": "Matilde",
+        "lastName": "Hand",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/7092411",
+        "tenantId": null
+      },
+      {
+        "reference": "a923555f-9706-4d87-b5ea-a067332b6b30",
+        "email": "Albertha80@gmail.com",
+        "firstName": "Sam",
+        "lastName": "O'Connell",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/12757489",
+        "tenantId": null
+      },
+      {
+        "reference": "180a26e2-f61d-41e5-8680-cd5752e75c58",
+        "email": "Anya_Will41@yahoo.com",
+        "firstName": "Dandre",
+        "lastName": "Boyer",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/324.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "073d728c-92f6-41ac-85bf-fccf2a297964",
+        "email": "Josiah0@hotmail.com",
+        "firstName": "Travon",
+        "lastName": "Mueller",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1023.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1c3103eb-c132-474e-b643-5f5d9f7f2dd4",
+        "email": "Isai_Bednar@gmail.com",
+        "firstName": "Tamara",
+        "lastName": "Ondricka",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/84912210",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "goods": [
+      {
+        "id": "39645ad2-5f63-4987-9d6a-e8de8d382dae",
+        "name": "Product 1",
+        "quantity": 71726,
+        "received_date": "2023-09-12T04:43:58.490Z",
+        "status": "Available",
+        "created_at": "2023-09-12T21:05:03.734Z",
+        "updated_at": "2023-09-12T08:35:46.743Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "31723076-3d13-4bb6-88ec-29fa742e2702",
+        "name": "Product 2",
+        "quantity": 78949,
+        "received_date": "2023-09-12T05:22:23.152Z",
+        "status": "Out of stock",
+        "created_at": "2023-09-12T14:34:21.562Z",
+        "updated_at": "2023-09-12T12:38:21.540Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "80ec17ec-1848-44d0-a3ba-1fbe13270e2f",
+        "name": "Product 3",
+        "quantity": 20265,
+        "received_date": "2023-09-12T10:37:49.646Z",
+        "status": "Limited stock",
+        "created_at": "2023-09-12T18:03:54.517Z",
+        "updated_at": "2023-09-12T17:52:31.610Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "3f93f866-562f-4bd6-87a1-df78ef13f2a7",
+        "name": "Product 4",
+        "quantity": 47260,
+        "received_date": "2023-09-12T21:08:29.424Z",
+        "status": "Pre-order",
+        "created_at": "2023-09-12T04:30:04.249Z",
+        "updated_at": "2023-09-12T23:01:06.865Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "6530bbb3-9e7d-4df6-93b7-89718bfc6ba3",
+        "name": "Product 5",
+        "quantity": 26438,
+        "received_date": "2023-09-12T17:38:30.031Z",
+        "status": "Discontinued",
+        "created_at": "2023-09-12T13:07:02.707Z",
+        "updated_at": "2023-09-12T13:59:41.184Z",
+        "receiver_id": "user_entity_pk",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "d35b4aec-d91a-450a-9d9d-664bdc2549a7",
+        "quantity": 14716,
+        "last_updated": "2023-09-12T06:26:29.609Z",
+        "updated_by": "user_entity_pk",
+        "status": "In stock",
+        "location": "Warehouse 1",
+        "created_at": "2023-09-12T17:55:31.716Z",
+        "updated_at": "2023-09-12T07:32:12.072Z",
+        "goods_id": "31723076-3d13-4bb6-88ec-29fa742e2702"
+      },
+      {
+        "id": "eea001e8-85a1-4d36-a897-6180d133dbaa",
+        "quantity": 54027,
+        "last_updated": "2023-09-12T04:48:28.066Z",
+        "updated_by": "user_entity_pk",
+        "status": "Out of stock",
+        "location": "Warehouse 2",
+        "created_at": "2023-09-12T13:15:57.100Z",
+        "updated_at": "2023-09-12T21:05:58.722Z",
+        "goods_id": "31723076-3d13-4bb6-88ec-29fa742e2702"
+      },
+      {
+        "id": "47010fed-b543-471c-82cb-62d4e95104aa",
+        "quantity": 17876,
+        "last_updated": "2023-09-12T08:03:42.072Z",
+        "updated_by": "user_entity_pk",
+        "status": "Low stock",
+        "location": "Warehouse 3",
+        "created_at": "2023-09-12T09:09:33.386Z",
+        "updated_at": "2023-09-12T15:12:30.107Z",
+        "goods_id": "39645ad2-5f63-4987-9d6a-e8de8d382dae"
+      },
+      {
+        "id": "ae7e8dd0-0de6-414a-834f-b3a8a2f4b981",
+        "quantity": 44034,
+        "last_updated": "2023-09-12T21:08:15.201Z",
+        "updated_by": "user_entity_pk",
+        "status": "On hold",
+        "location": "Warehouse 4",
+        "created_at": "2023-09-12T16:23:42.690Z",
+        "updated_at": "2023-09-12T01:26:10.787Z",
+        "goods_id": "39645ad2-5f63-4987-9d6a-e8de8d382dae"
+      },
+      {
+        "id": "925ef50f-ffc9-4d70-a584-5b81209366c4",
+        "quantity": 9910,
+        "last_updated": "2023-09-12T18:52:49.230Z",
+        "updated_by": "user_entity_pk",
+        "status": "Shipped",
+        "location": "Warehouse 5",
+        "created_at": "2023-09-12T11:52:07.553Z",
+        "updated_at": "2023-09-12T05:36:24.268Z",
+        "goods_id": "6530bbb3-9e7d-4df6-93b7-89718bfc6ba3"
+      }
+    ],
+    "divergence": [
+      {
+        "id": "ad8eda07-3931-4666-8a23-6386c75a8da9",
+        "expected_quantity": 74445,
+        "received_quantity": 67107,
+        "divergence_divergence": 54117,
+        "analysis_date": "2023-09-12T11:20:21.666Z",
+        "created_at": "2023-09-12T21:35:52.567Z",
+        "updated_at": "2023-09-12T20:03:05.652Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "31723076-3d13-4bb6-88ec-29fa742e2702"
+      },
+      {
+        "id": "dd8d3b90-dc32-4ef5-85c8-91ef02308a75",
+        "expected_quantity": 63790,
+        "received_quantity": 81293,
+        "divergence_divergence": 61506,
+        "analysis_date": "2023-09-13T00:44:00.230Z",
+        "created_at": "2023-09-12T17:24:49.436Z",
+        "updated_at": "2023-09-12T10:12:03.487Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "39645ad2-5f63-4987-9d6a-e8de8d382dae"
+      },
+      {
+        "id": "301a14f3-8251-4d44-b3ae-3ee714d24082",
+        "expected_quantity": 40206,
+        "received_quantity": 77056,
+        "divergence_divergence": 29195,
+        "analysis_date": "2023-09-12T06:25:46.348Z",
+        "created_at": "2023-09-12T04:33:11.636Z",
+        "updated_at": "2023-09-12T18:17:01.985Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "6530bbb3-9e7d-4df6-93b7-89718bfc6ba3"
+      },
+      {
+        "id": "0f0fb61d-3da9-43a6-bdde-32d9dd53ee7b",
+        "expected_quantity": 33943,
+        "received_quantity": 20616,
+        "divergence_divergence": 37846,
+        "analysis_date": "2023-09-13T00:40:25.986Z",
+        "created_at": "2023-09-12T14:01:29.257Z",
+        "updated_at": "2023-09-12T23:24:56.283Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "80ec17ec-1848-44d0-a3ba-1fbe13270e2f"
+      },
+      {
+        "id": "792d597e-ec4e-4cd0-a3a7-73ac380e86cb",
+        "expected_quantity": 90240,
+        "received_quantity": 65166,
+        "divergence_divergence": 74356,
+        "analysis_date": "2023-09-12T09:40:46.707Z",
+        "created_at": "2023-09-12T02:35:42.009Z",
+        "updated_at": "2023-09-12T11:27:56.641Z",
+        "analyst_id": "user_entity_pk",
+        "goods_id": "31723076-3d13-4bb6-88ec-29fa742e2702"
+      }
+    ],
+    "balance": [
+      {
+        "id": "6b091f1a-1bbc-4d41-93c4-2fbc4e2b9e5a",
+        "total_amount": 21433,
+        "paid_amount": 41988,
+        "due_amount": 40988,
+        "last_payment_date": "2023-09-12T04:58:51.212Z",
+        "next_payment_date": "2023-09-12T21:20:24.987Z",
+        "created_at": "2023-09-12T20:26:43.244Z",
+        "updated_at": "2023-09-12T08:37:14.034Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "8e1142ee-4e3c-4732-aca6-887395ad7cb3",
+        "total_amount": 23547,
+        "paid_amount": 30679,
+        "due_amount": 73654,
+        "last_payment_date": "2023-09-12T19:02:27.319Z",
+        "next_payment_date": "2023-09-12T05:12:04.531Z",
+        "created_at": "2023-09-12T15:08:12.110Z",
+        "updated_at": "2023-09-12T15:09:24.426Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "453aa43e-5b3d-422b-929c-643b5b7e1715",
+        "total_amount": 27616,
+        "paid_amount": 7992,
+        "due_amount": 42840,
+        "last_payment_date": "2023-09-12T01:40:11.567Z",
+        "next_payment_date": "2023-09-12T03:32:35.290Z",
+        "created_at": "2023-09-12T15:53:26.727Z",
+        "updated_at": "2023-09-12T14:30:24.524Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "eebbd5c4-d35e-4811-8e47-13c83a1f11f0",
+        "total_amount": 4738,
+        "paid_amount": 24216,
+        "due_amount": 40567,
+        "last_payment_date": "2023-09-12T21:53:29.003Z",
+        "next_payment_date": "2023-09-12T08:55:34.615Z",
+        "created_at": "2023-09-12T14:46:10.908Z",
+        "updated_at": "2023-09-12T21:26:46.573Z",
+        "supplier_id": "main_entity_pk"
+      },
+      {
+        "id": "d6a72744-4be8-4389-99e6-ada0bc2ec75d",
+        "total_amount": 76789,
+        "paid_amount": 55630,
+        "due_amount": 32404,
+        "last_payment_date": "2023-09-12T08:47:11.794Z",
+        "next_payment_date": "2023-09-12T03:25:55.363Z",
+        "created_at": "2023-09-12T03:44:41.230Z",
+        "updated_at": "2023-09-12T10:35:49.184Z",
+        "supplier_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "0eb4dc1a-dce4-4862-8c24-41128a796036",
+        "email": "Davonte_Rolfson82@hotmail.com",
+        "firstName": "Luella",
+        "lastName": "Durgan",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/848.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "6895fef4-ac9f-439d-b088-a77e9d86b17e",
+        "email": "Marley_Roob11@hotmail.com",
+        "firstName": "Hoyt",
+        "lastName": "Hilll",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/346.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "d3a3513f-88d5-4286-9f84-5936f700b966",
+        "email": "Katelyn_Rolfson18@hotmail.com",
+        "firstName": "Berenice",
+        "lastName": "Gusikowski",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/214.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "dd78a4b7-846a-4caa-8d8f-fa0d1769145f",
+        "email": "Mollie.Gislason36@yahoo.com",
+        "firstName": "Thalia",
+        "lastName": "Brakus",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/70507860",
+        "tenantId": null
+      },
+      {
+        "reference": "4dae7345-f42f-4f93-8509-d459f610c2bb",
+        "email": "Helene45@gmail.com",
+        "firstName": "Wendy",
+        "lastName": "Donnelly",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/797.jpg",
+        "tenantId": null
+      }
+    ]
+  }
+]
